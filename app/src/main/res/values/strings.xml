@@ -1,3 +1,19 @@
 <resources>
     <string name="app_name">MyLibrary</string>
+    <string name="app_name_persian">کتابخانه من</string>
+    <string name="app_version">نسخه 6.0</string>
+
+    //activity_main
+    <string name="home_t1">یه شروع لذت بخش ...</string>
+    <string name="home_all">همه داستان ها</string>
+    <string name="home_cat">دسته بندی ها</string>
+    <string name="home_about">درباره ما</string>
+    <string name="home_test1">تست1</string>
+    <string name="home_test2">تست2</string>
+
+    //menu_drawer
+    <string name="menu_rate">امتیاز به برنامه</string>
+    <string name="menu_share">اشتراک گذاری برنامه</string>
+    <string name="menu_aboutUs">درباره سامسونگ من</string>
+    <string name="menu_exit">خروج</string>
 </resources>
