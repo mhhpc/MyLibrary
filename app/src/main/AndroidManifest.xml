@@ -15,6 +15,15 @@
         android:theme="@style/Theme.MyLibrary"
         tools:targetApi="31">
         <activity
+            android:name=".Settings_activity"
+            android:exported="false" />
+        <activity
+            android:name=".Search_activity"
+            android:exported="false" />
+        <activity
+            android:name=".About_activity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

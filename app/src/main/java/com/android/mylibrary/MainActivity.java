@@ -1,25 +1,34 @@
 package com.android.mylibrary;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.drawerlayout.widget.DrawerLayout;
 
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.drawable.AnimationDrawable;
+import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
+import android.view.Gravity;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 
+import com.google.android.material.navigation.NavigationView;
 import com.transitionseverywhere.Transition;
 import com.transitionseverywhere.TransitionManager;
 import com.transitionseverywhere.extra.Scale;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     DrawerLayout drawerLayout;
+    NavigationView navigationView;
+    ImageView imageView_menu, imageView_search, imageView_settings;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -60,6 +69,10 @@ public class MainActivity extends AppCompatActivity {
             }
         }, 200);
 
+        //-------------
+        init();
+        onclick();
+
     }
 
     //first run dialog ----------------------
@@ -79,6 +92,86 @@ public class MainActivity extends AppCompatActivity {
         SharedPreferences.Editor editor = prefs.edit();
         editor.putBoolean("firstStart", false);
         editor.apply();
+    }
+
+    private void init() {
+        drawerLayout = findViewById(R.id.main);
+        navigationView = findViewById(R.id.navigationView);
+        imageView_menu = findViewById(R.id.imageView_menu);
+        imageView_search = findViewById(R.id.imageView_search);
+        imageView_settings = findViewById(R.id.imageView_settings);
+
+        navigationView.bringToFront();
+    }
+
+    private void onclick() {
+
+        imageView_menu.setOnClickListener(this);
+        imageView_search.setOnClickListener(this);
+        imageView_settings.setOnClickListener(this);
+
+        navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                switch (item.getItemId()) {
+
+                    case R.id.menu_rate:
+                        drawerLayout.closeDrawers();
+                        Intent intentRate = new Intent(Intent.ACTION_VIEW);
+                        intentRate.setData(Uri.parse("https://cafebazaar.ir/developer/781503171866"));
+                        startActivity(intentRate);
+                        break;
+
+                    case R.id.menu_aboutUs:
+                        drawerLayout.closeDrawers();
+                        startActivity(new Intent(MainActivity.this, About_activity.class));
+                        break;
+
+                    case R.id.menu_exit:
+                        drawerLayout.closeDrawers();
+                        finish();
+                        break;
+
+                    case R.id.menu_share:
+                        Intent intentSend = new Intent();
+                        intentSend.setAction(Intent.ACTION_SEND);
+                        intentSend.putExtra(Intent.EXTRA_TEXT, "سلام \n به راحتی میتونی اپلیکیشن سامسونگ من رو از لینک زیر دانلود کنی ;) \n https://cafebazaar.ir/developer/781503171866");
+                        intentSend.setType("text/plain");
+
+                        Intent share = Intent.createChooser(intentSend, null);
+                        startActivity(share);
+                }
+                return true;
+            }
+        });
+    }
+
+    @Override
+    public void onClick(View v) {
+
+        if (v == imageView_menu) {
+            drawerLayout.openDrawer(Gravity.RIGHT);
+        }
+
+        if (v == imageView_search) {
+            Intent intent = new Intent(this, Search_activity.class);
+            startActivity(intent);
+        }
+
+        if (v == imageView_settings) {
+            Intent intent = new Intent(this, Settings_activity.class);
+            startActivity(intent);
+        }
+
+    }
+
+    @Override
+    public void onBackPressed() {
+        if (drawerLayout.isDrawerOpen(Gravity.RIGHT)) {
+            drawerLayout.closeDrawers();
+        } else {
+            super.onBackPressed();
+        }
     }
 
 }
