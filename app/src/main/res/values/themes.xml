@@ -47,4 +47,64 @@
         <item name="android:textStyle">bold</item>
         <item name="android:background">@drawable/corner_card</item>
     </style>
+
+    <style name="AppbarTitle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">280dp</item>
+        <item name="android:fitsSystemWindows">true</item>
+        <item name="android:theme">@style/Theme.MyLibrary</item>
+    </style>
+
+    <style name="TextAppearance.MyApp.Title.Expanded" parent="android:TextAppearance">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextAppearance.MyApp.Title.Collapsed" parent="android:TextAppearance">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="CollapsingToolbarLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@drawable/gradient_list_toolbar</item>
+        <item name="expandedTitleTextAppearance">@style/TextAppearance.MyApp.Title.Expanded</item>
+        <item name="collapsedTitleTextAppearance">@style/TextAppearance.MyApp.Title.Collapsed</item>
+        <item name="android:fitsSystemWindows">true</item>
+        <item name="collapsedTitleGravity">center</item>
+        <item name="collapsedTitleTextColor">@color/white</item>
+        <item name="contentScrim">@color/colorPrimary</item>
+        <item name="expandedTitleGravity">bottom|center_horizontal</item>
+        <item name="expandedTitleTextColor">@color/white</item>
+        <item name="layout_scrollFlags">scroll|snap|exitUntilCollapsed</item>
+    </style>
+
+    <style name="AppbarLottie">
+        <item name="android:layout_width">170dp</item>
+        <item name="android:layout_height">170dp</item>
+        <item name="android:layout_gravity">center|top</item>
+        <item name="android:layout_marginTop">30dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="layout_collapseMode">parallax</item>
+        <item name="lottie_autoPlay">true</item>
+        <item name="lottie_loop">true</item>
+    </style>
+
+    <style name="Toolbar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">?attr/actionBarSize</item>
+        <item name="layout_collapseMode">pin</item>
+    </style>
+
+    <style name="NestedScrollView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@drawable/gradient_list</item>
+        <item name="layout_behavior">
+            com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior
+        </item>
+    </style>
+
 </resources>

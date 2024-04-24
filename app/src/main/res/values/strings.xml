@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">MyLibrary</string>
+    <string name="app_name">My Library</string>
     <string name="app_name_persian">کتابخانه من</string>
     <string name="app_version">نسخه 6.0</string>
 
@@ -8,12 +8,18 @@
     <string name="home_all">همه داستان ها</string>
     <string name="home_cat">دسته بندی ها</string>
     <string name="home_about">درباره ما</string>
-    <string name="home_test1">تست1</string>
-    <string name="home_test2">تست2</string>
+    <string name="home_test1">کتابخانه من ؟!</string>
+    <string name="home_test2">چرا کتابخانه من؟</string>
 
     //menu_drawer
     <string name="menu_rate">امتیاز به برنامه</string>
     <string name="menu_share">اشتراک گذاری برنامه</string>
     <string name="menu_aboutUs">درباره سامسونگ من</string>
     <string name="menu_exit">خروج</string>
+
+    //settings_drawer
+    <string name="settings_title">تنظیمات</string>
+    <string name="settings_dark">تم تاریک</string>
+    <string name="settings_light">تم روشن</string>
+    <string name="settings_default">پیشفرض</string>
 </resources>

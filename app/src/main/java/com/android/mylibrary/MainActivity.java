@@ -3,6 +3,7 @@ package com.android.mylibrary;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
 import androidx.drawerlayout.widget.DrawerLayout;
 
 import android.content.DialogInterface;
@@ -20,6 +21,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 
 import com.google.android.material.navigation.NavigationView;
+import com.squareup.picasso.Picasso;
 import com.transitionseverywhere.Transition;
 import com.transitionseverywhere.TransitionManager;
 import com.transitionseverywhere.extra.Scale;
@@ -33,6 +35,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        //apply selected theme ----------
+        applyTheme();
         setContentView(R.layout.activity_main);
 
         //Gradient -----------
@@ -69,6 +73,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             }
         }, 200);
 
+        //Image links
+        ImageView ImageView = (ImageView) findViewById(R.id.miv1);
+        Picasso.get().load("https://s8.uupload.ir/files/_ff62c125-76ab-4859-8587-8ebc154fabb4(1)_2sie.jpg").into(ImageView);
+
+        ImageView ImageView2 = (ImageView) findViewById(R.id.miv2);
+        Picasso.get().load("https://s8.uupload.ir/files/_33dde004-9358-4709-97b8-41deca4d338e(1)_2sk.jpg").into(ImageView2);
+
         //-------------
         init();
         onclick();
@@ -92,6 +103,22 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         SharedPreferences.Editor editor = prefs.edit();
         editor.putBoolean("firstStart", false);
         editor.apply();
+    }
+
+    //apply selected theme ----------
+    @Override
+    protected void onResume() {
+        super.onResume();
+        // اعمال تم بر اساس تنظیمات ذخیره شده
+        applyTheme();
+    }
+    //apply selected theme ----------
+    private void applyTheme() {
+        // بازیابی تم انتخاب شده از SharedPreferences
+        SharedPreferences preferences = getSharedPreferences("MyPrefs", MODE_PRIVATE);
+        int selectedTheme = preferences.getInt("SelectedTheme", AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM);
+        // تنظیم تم انتخاب شده
+        AppCompatDelegate.setDefaultNightMode(selectedTheme);
     }
 
     private void init() {

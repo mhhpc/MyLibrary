@@ -1,37 +1,112 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/gradient_list"
     tools:context=".Settings_activity">
 
-    <RadioGroup
-        android:id="@+id/radioGroup"
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:layout_height="match_parent"
+        android:background="@drawable/ctr_bg">
 
-        <RadioButton
-            android:id="@+id/btnLight"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Light Theme" />
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appbar"
+            style="@style/AppbarTitle">
 
-        <RadioButton
-            android:id="@+id/btnDark"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Dark Theme" />
+            <com.google.android.material.appbar.CollapsingToolbarLayout
+                android:id="@+id/collapsing_toolbar"
+                style="@style/CollapsingToolbarLayout"
+                app:title="@string/settings_title">
 
-        <RadioButton
-            android:id="@+id/btnDefault"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Default Theme" />
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/lottie"
+                    style="@style/AppbarLottie"
+                    app:lottie_rawRes="@raw/settings" />
 
-        <!-- Add more RadioButtons if needed -->
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    style="@style/Toolbar" />
 
-    </RadioGroup>
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
 
-</RelativeLayout>
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/nested_scrollview"
+            style="@style/NestedScrollView">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    tools:ignore="MissingConstraints">
+
+                    <RadioGroup
+                        android:id="@+id/radioGroup"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal"
+                        tools:ignore="MissingConstraints">
+
+                        <RadioButton
+                            android:id="@+id/btnLight"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/custom_radio_selector"
+                            android:button="@color/transparent"
+                            android:drawableTop="@drawable/light"
+                            android:text="@string/settings_light"
+                            android:textAlignment="center"
+                            android:textColor="@drawable/custom_radio_text" />
+
+                        <RadioButton
+                            android:id="@+id/btnDark"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/custom_radio_selector"
+                            android:button="@color/transparent"
+                            android:drawableTop="@drawable/night"
+                            android:text="@string/settings_dark"
+                            android:textAlignment="center"
+                            android:textColor="@drawable/custom_radio_text" />
+
+                        <RadioButton
+                            android:id="@+id/btnDefault"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/custom_radio_selector"
+                            android:button="@color/transparent"
+                            android:drawableTop="@drawable/system_default"
+                            android:text="@string/settings_default"
+                            android:textAlignment="center"
+                            android:textColor="@drawable/custom_radio_text" />
+
+                        <!-- Add more RadioButtons if needed -->
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
