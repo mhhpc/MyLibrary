@@ -78,7 +78,7 @@
                     app:tint="@color/white" />
 
                 <ImageView
-                    android:id="@+id/imageView_info"
+                    android:id="@+id/imageView_about"
                     android:layout_width="27dp"
                     android:layout_height="27dp"
                     android:layout_centerVertical="true"

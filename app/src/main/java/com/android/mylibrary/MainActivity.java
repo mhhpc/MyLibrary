@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     DrawerLayout drawerLayout;
     NavigationView navigationView;
-    ImageView imageView_menu, imageView_search, imageView_settings;
+    ImageView imageView_menu, imageView_search, imageView_settings, imageView_about;
 
     private TextSize settingsManager;
 
@@ -147,6 +147,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         imageView_menu = findViewById(R.id.imageView_menu);
         imageView_search = findViewById(R.id.imageView_search);
         imageView_settings = findViewById(R.id.imageView_settings);
+        imageView_about = findViewById(R.id.imageView_about);
 
         navigationView.bringToFront();
     }
@@ -156,6 +157,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         imageView_menu.setOnClickListener(this);
         imageView_search.setOnClickListener(this);
         imageView_settings.setOnClickListener(this);
+        imageView_about.setOnClickListener(this);
 
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
@@ -182,7 +184,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     case R.id.menu_share:
                         Intent intentSend = new Intent();
                         intentSend.setAction(Intent.ACTION_SEND);
-                        intentSend.putExtra(Intent.EXTRA_TEXT, "سلام \n به راحتی میتونی اپلیکیشن سامسونگ من رو از لینک زیر دانلود کنی ;) \n https://cafebazaar.ir/developer/781503171866");
+                        intentSend.putExtra(Intent.EXTRA_TEXT, "سلام \n به راحتی میتونی اپلیکیشن کتابخانه من رو از لینک زیر دانلود کنی ;) \n https://cafebazaar.ir/developer/781503171866");
                         intentSend.setType("text/plain");
 
                         Intent share = Intent.createChooser(intentSend, null);
@@ -209,6 +211,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             Intent intent = new Intent(this, Settings_activity.class);
             startActivity(intent);
         }
+        if (v == imageView_about) {
+            Intent intent = new Intent(this, About_activity.class);
+            startActivity(intent);
+        }
+
 
     }
 

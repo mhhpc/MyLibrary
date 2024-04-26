@@ -14,11 +14,13 @@
     //menu_drawer
     <string name="menu_rate">امتیاز به برنامه</string>
     <string name="menu_share">اشتراک گذاری برنامه</string>
-    <string name="menu_aboutUs">درباره سامسونگ من</string>
+    <string name="menu_aboutUs">درباره کتابخانه من</string>
     <string name="menu_exit">خروج</string>
 
-    //settings_drawer
+    //activity_settings
     <string name="settings_title">تنظیمات</string>
+    <string name="settings_t1">تغییر تم برنامه</string>
+    <string name="settings_t2">تغییر سایز متن</string>
     <string name="settings_dark">تم تاریک</string>
     <string name="settings_light">تم روشن</string>
     <string name="settings_default">پیشفرض</string>
