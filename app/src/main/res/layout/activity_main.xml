@@ -137,14 +137,15 @@
                             android:layout_marginTop="5dp">
 
                             <TextView
+                                android:id="@+id/text1"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
                                 android:layout_weight="1"
                                 android:gravity="center"
                                 android:text="@string/home_t1"
-                                android:textColor="#673AB7"
-                                android:textSize="18sp"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="17sp"
                                 android:textStyle="bold" />
 
                         </LinearLayout>
@@ -198,7 +199,7 @@
                                 android:gravity="center"
                                 android:text="@string/home_all"
                                 android:textColor="@color/black"
-                                android:textSize="15sp" />
+                                android:textSize="17sp" />
 
                             <TextView
                                 android:id="@+id/t2"
@@ -212,7 +213,7 @@
                                 android:gravity="center"
                                 android:text="@string/home_cat"
                                 android:textColor="@color/black"
-                                android:textSize="15sp" />
+                                android:textSize="17sp" />
 
                         </LinearLayout>
 
@@ -238,6 +239,7 @@
                             style="@style/TipsImageView" />
 
                         <TextView
+                            android:id="@+id/tv1"
                             style="@style/TipsTextView"
                             android:text="@string/home_test1" />
 
@@ -254,6 +256,7 @@
                             style="@style/TipsImageView" />
 
                         <TextView
+                            android:id="@+id/tv2"
                             style="@style/TipsTextView"
                             android:text="@string/home_test2" />
 
@@ -281,6 +284,7 @@
                             android:src="@drawable/ic_launcher_background" />
 
                         <TextView
+                            android:id="@+id/tv3"
                             style="@style/TipsTextView"
                             android:text="@string/home_about" />
 

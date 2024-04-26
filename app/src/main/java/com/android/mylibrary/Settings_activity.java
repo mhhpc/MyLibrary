@@ -1,7 +1,5 @@
 package com.android.mylibrary;
 
-import static androidx.constraintlayout.helper.widget.MotionEffect.TAG;
-
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.AppCompatDelegate;
 import androidx.core.widget.NestedScrollView;
@@ -9,18 +7,22 @@ import androidx.core.widget.NestedScrollView;
 import android.content.SharedPreferences;
 import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
-import android.util.Log;
 import android.widget.RadioGroup;
+import android.widget.SeekBar;
+import android.widget.TextView;
 
 import com.google.android.material.appbar.CollapsingToolbarLayout;
-import com.google.android.material.button.MaterialButtonToggleGroup;
 
 public class Settings_activity extends AppCompatActivity {
 
+    //for theme ------------
     private RadioGroup radioGroup;
-    private static final String TAG = "SettingsActivity";
     private static final String PREFS_NAME = "MyPrefs";
     private static final String PREF_SELECTED_THEME = "SelectedTheme";
+
+    private TextSize settingsManager;
+    private TextView sampleText;
+    private SeekBar textSizeSeekBar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,13 +44,13 @@ public class Settings_activity extends AppCompatActivity {
 
         radioGroup = findViewById(R.id.radioGroup);
 
-        // بازیابی تم انتخاب شده از SharedPreferences
+        // restore theme from SharedPreferences
         SharedPreferences preferences = getSharedPreferences(PREFS_NAME, MODE_PRIVATE);
         int selectedTheme = preferences.getInt(PREF_SELECTED_THEME, AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM);
-        // تنظیم تم انتخاب شده به عنوان تم پیشفرض
+        // set selected theme to default
         AppCompatDelegate.setDefaultNightMode(selectedTheme);
 
-        // نمایش گزینه انتخاب شده در RadioGroup
+        // show selected option in RadioGroup
         switch (selectedTheme) {
             case AppCompatDelegate.MODE_NIGHT_NO:
                 radioGroup.check(R.id.btnLight);
@@ -76,14 +78,50 @@ public class Settings_activity extends AppCompatActivity {
                     theme = AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM;
                     break;
             }
-            // ذخیره تم انتخاب شده در SharedPreferences
+            // save theme in SharedPreferences
             SharedPreferences.Editor editor = preferences.edit();
             editor.putInt(PREF_SELECTED_THEME, theme);
             editor.apply();
 
-            // با استفاده از recreate()، اکتیویتی را مجدداً ایجاد می‌کنیم تا تغییرات اعمال شود.
+            // recreate activity to apply theme
             recreate();
         });
+
+        settingsManager = new TextSize(this);
+        sampleText = findViewById(R.id.textview);
+
+        float textSize = settingsManager.getTextSize();
+        sampleText.setTextSize(textSize);
+
+        settingsManager = new TextSize(this);
+
+        sampleText = findViewById(R.id.textview);
+        textSizeSeekBar = findViewById(R.id.seekbar);
+
+// مقدار اولیه برای سایز متن
+        textSizeSeekBar.setProgress((int) settingsManager.getTextSize());
+
+// برای تغییرات در SeekBar
+        textSizeSeekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+            @Override
+            public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
+                // تعیین حداقل و حداکثر مقدار برای اندازه متن
+                float minTextSize = 10;
+                float maxTextSize = 40;
+
+                // محدود کردن مقدار progress به حداقل و حداکثر مقادیر مجاز
+                float textSize = Math.max(minTextSize, Math.min(progress, maxTextSize));
+                sampleText.setTextSize(textSize);
+                settingsManager.setTextSize(textSize);
+            }
+
+            @Override
+            public void onStartTrackingTouch(SeekBar seekBar) {}
+
+            @Override
+            public void onStopTrackingTouch(SeekBar seekBar) {}
+        });
+
 
     }
 }

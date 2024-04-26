@@ -19,6 +19,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
 import com.google.android.material.navigation.NavigationView;
 import com.squareup.picasso.Picasso;
@@ -32,12 +33,31 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     NavigationView navigationView;
     ImageView imageView_menu, imageView_search, imageView_settings;
 
+    private TextSize settingsManager;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         //apply selected theme ----------
         applyTheme();
         setContentView(R.layout.activity_main);
+
+        //Change text size
+        settingsManager = new TextSize(this);
+        TextView Textview1 = findViewById(R.id.text1);
+        TextView Textview2 = findViewById(R.id.t1);
+        TextView Textview3 = findViewById(R.id.t2);
+        TextView Textview4 = findViewById(R.id.tv1);
+        TextView Textview5 = findViewById(R.id.tv2);
+        TextView Textview6 = findViewById(R.id.tv3);
+
+        float textSize = settingsManager.getTextSize();
+        Textview1.setTextSize(textSize);
+        Textview2.setTextSize(textSize);
+        Textview3.setTextSize(textSize);
+        Textview4.setTextSize(textSize);
+        Textview5.setTextSize(textSize);
+        Textview6.setTextSize(textSize);
 
         //Gradient -----------
         drawerLayout = findViewById(R.id.main);
