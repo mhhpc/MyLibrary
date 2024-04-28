@@ -6,16 +6,19 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.AppCompatDelegate;
 import androidx.core.widget.NestedScrollView;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.drawable.AnimationDrawable;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
+import android.view.Gravity;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.RadioGroup;
 import android.widget.SeekBar;
+import android.widget.Spinner;
 import android.widget.TextView;
 
 import com.google.android.material.appbar.CollapsingToolbarLayout;
@@ -23,6 +26,9 @@ import com.transitionseverywhere.Slide;
 import com.transitionseverywhere.Transition;
 import com.transitionseverywhere.TransitionManager;
 import com.transitionseverywhere.extra.Scale;
+
+import java.util.ArrayList;
+import java.util.Arrays;
 
 public class Settings_activity extends AppCompatActivity {
 
@@ -42,6 +48,7 @@ public class Settings_activity extends AppCompatActivity {
 
         //Animation ------------
         final ViewGroup r = findViewById(R.id.nested_scrollview);
+        final TextView t0 = findViewById(R.id.t0);
         final TextView t1 = findViewById(R.id.t1);
         final LinearLayout t2 = findViewById(R.id.list);
         final TextView t3 = findViewById(R.id.t2);
@@ -54,6 +61,7 @@ public class Settings_activity extends AppCompatActivity {
                 Transition transition = new Slide();
                 transition.setDuration(600);
                 TransitionManager.beginDelayedTransition(r, transition);
+                t0.setVisibility(View.VISIBLE);
                 t3.setVisibility(View.VISIBLE);
                 t4.setVisibility(View.VISIBLE);
                 t5.setVisibility(View.VISIBLE);
@@ -142,8 +150,12 @@ public class Settings_activity extends AppCompatActivity {
         settingsManager = new TextSize(this);
         sampleText = findViewById(R.id.textview);
 
+        TextView Textview2 = findViewById(R.id.t0);
+
         float textSize = settingsManager.getTextSize();
         sampleText.setTextSize(textSize);
+
+        Textview2.setTextSize(textSize);
 
         settingsManager = new TextSize(this);
 
@@ -176,6 +188,14 @@ public class Settings_activity extends AppCompatActivity {
             }
         });
 
-
     }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        Intent resultIntent = new Intent();
+        setResult(RESULT_OK, resultIntent);
+        finish();
+    }
+
 }

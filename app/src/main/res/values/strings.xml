@@ -19,9 +19,21 @@
 
     //activity_settings
     <string name="settings_title">تنظیمات</string>
+    <string name="settings_t0">باتوجه به نسخه اندروید گوشی شما، برخی تنظیمات ممکن است در دسترس نباشد.</string>
     <string name="settings_t1">تغییر تم برنامه</string>
     <string name="settings_t2">تغییر سایز متن</string>
+    <string name="settings_t3">تغییر سایز متن</string>
     <string name="settings_dark">تم تاریک</string>
     <string name="settings_light">تم روشن</string>
     <string name="settings_default">پیشفرض</string>
+
+    //activity_about
+    <string name="about_t">حمایت از ما</string>
+    <string name="about_b2">امتیاز به برنامه</string>
+    <string name="about_b3">اشتراک گذاری برنامه</string>
+    <string name="about_t2">(: درباره ما :)</string>
+    <string name="about_tx1">ساخته شده توسط محمد حسین حمیدی</string>
+    <string name="about_tx2">Copyright © 1401-1403 MHH Releases</string>
+    <string name="about_tx3">1 Farvardin 1403 Released</string>
+    <string name="about_tx4">تمامی محتوای موجود در این برنامه متعلق به تیم (سامسونگ من) می‌باشد</string>
 </resources>

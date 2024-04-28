@@ -129,7 +129,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     protected void onResume() {
         super.onResume();
-        // اعمال تم بر اساس تنظیمات ذخیره شده
         applyTheme();
     }
     //apply selected theme ----------
@@ -167,7 +166,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     case R.id.menu_rate:
                         drawerLayout.closeDrawers();
                         Intent intentRate = new Intent(Intent.ACTION_VIEW);
-                        intentRate.setData(Uri.parse("https://cafebazaar.ir/developer/781503171866"));
+                        intentRate.setData(Uri.parse("https://cafebazaar.ir/app/com.example.short_stories"));
                         startActivity(intentRate);
                         break;
 
@@ -184,7 +183,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     case R.id.menu_share:
                         Intent intentSend = new Intent();
                         intentSend.setAction(Intent.ACTION_SEND);
-                        intentSend.putExtra(Intent.EXTRA_TEXT, "سلام \n به راحتی میتونی اپلیکیشن کتابخانه من رو از لینک زیر دانلود کنی ;) \n https://cafebazaar.ir/developer/781503171866");
+                        intentSend.putExtra(Intent.EXTRA_TEXT, "سلام \n به راحتی میتونی اپلیکیشن کتابخانه من رو از لینک زیر دانلود کنی ;) \n https://cafebazaar.ir/app/com.example.short_stories");
                         intentSend.setType("text/plain");
 
                         Intent share = Intent.createChooser(intentSend, null);
@@ -209,14 +208,23 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         if (v == imageView_settings) {
             Intent intent = new Intent(this, Settings_activity.class);
-            startActivity(intent);
+            startActivityForResult(intent, REQUEST_SETTINGS);
         }
         if (v == imageView_about) {
             Intent intent = new Intent(this, About_activity.class);
             startActivity(intent);
         }
 
+    }
 
+    //if onresume from activity_settings recreate() activity_main
+    static final int REQUEST_SETTINGS = 1;
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (requestCode == REQUEST_SETTINGS && resultCode == RESULT_OK) {
+            recreate();
+        }
     }
 
     @Override
