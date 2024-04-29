@@ -23,11 +23,35 @@ import com.transitionseverywhere.TransitionManager;
 
 public class About_activity extends AppCompatActivity {
 
+    private TextSize settingsManager;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_about);
 
+        //Change text size
+        settingsManager = new TextSize(this);
+        TextView Textview1 = findViewById(R.id.t1);
+        TextView Textview2 = findViewById(R.id.t2);
+        TextView Textview3 = findViewById(R.id.t3);
+        TextView Textview4 = findViewById(R.id.t4);
+        TextView Textview5 = findViewById(R.id.t5);
+        TextView Textview6 = findViewById(R.id.t6);
+        TextView Textview7 = findViewById(R.id.t7);
+        TextView Textview8 = findViewById(R.id.t8);
+
+        float textSize = settingsManager.getTextSize();
+        Textview1.setTextSize(textSize);
+        Textview2.setTextSize(textSize);
+        Textview3.setTextSize(textSize);
+        Textview4.setTextSize(textSize);
+        Textview5.setTextSize(textSize);
+        Textview6.setTextSize(textSize);
+        Textview7.setTextSize(textSize);
+        Textview8.setTextSize(textSize);
+
+        //gradient ------------------
         ConstraintLayout constraintLayout = findViewById(R.id.about);
         AnimationDrawable animationDrawable = (AnimationDrawable) constraintLayout.getBackground();
         animationDrawable.setEnterFadeDuration(2000);

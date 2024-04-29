@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.AppCompatDelegate;
 import androidx.drawerlayout.widget.DrawerLayout;
 
+import android.annotation.SuppressLint;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -99,6 +100,22 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         ImageView ImageView2 = (ImageView) findViewById(R.id.miv2);
         Picasso.get().load("https://s8.uupload.ir/files/_33dde004-9358-4709-97b8-41deca4d338e(1)_2sk.jpg").into(ImageView2);
+
+        //text onclick
+        @SuppressLint("CutPasteId") TextView txt1 = (TextView) findViewById(R.id.t2);
+        txt1.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, Categories_activity.class));
+            }
+        });
+
+        //Image buttons onclick
+        @SuppressLint("CutPasteId") ImageView btn1 = (ImageView) findViewById(R.id.b2);
+        btn1.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, Categories_activity.class));
+            }
+        });
 
         //-------------
         init();

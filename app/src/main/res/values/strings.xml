@@ -33,7 +33,15 @@
     <string name="about_b3">اشتراک گذاری برنامه</string>
     <string name="about_t2">(: درباره ما :)</string>
     <string name="about_tx1">ساخته شده توسط محمد حسین حمیدی</string>
-    <string name="about_tx2">Copyright © 1401-1403 MHH Releases</string>
-    <string name="about_tx3">1 Farvardin 1403 Released</string>
-    <string name="about_tx4">تمامی محتوای موجود در این برنامه متعلق به تیم (سامسونگ من) می‌باشد</string>
+    <string name="about_tx2">Copyright © 1398-1403 MHH Releases</string>
+    <string name="about_tx3">10 Ordibehesht 1403 Released</string>
+    <string name="about_tx4">منبع: 1. namnak.com</string>
+
+    //activity_categories
+    <string name="categories_title">دسته بندی ها</string>
+    <string name="categories_t1">عاطفی</string>
+    <string name="categories_t2">مذهبی</string>
+    <string name="categories_t3">غمگین</string>
+    <string name="categories_t4">خنده و سرگرمی</string>
+    <string name="categories_t5">درس آموز</string>
 </resources>

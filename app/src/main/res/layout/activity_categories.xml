@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_list"
+    tools:context=".Categories_activity">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/ctr_bg">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appbar"
+            style="@style/AppbarTitle">
+
+            <com.google.android.material.appbar.CollapsingToolbarLayout
+                android:id="@+id/collapsing_toolbar"
+                style="@style/CollapsingToolbarLayout"
+                app:title="@string/categories_title">
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/lottie"
+                    style="@style/AppbarLottie"
+                    app:lottie_rawRes="@raw/settings" />
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    style="@style/Toolbar" />
+
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/nested_scrollview"
+            style="@style/NestedScrollView">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/list1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-20dp"
+                    tools:ignore="Orientation">
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/anim1"
+                        style="@style/Lottie1"
+                        android:layout_weight="1"
+                        app:lottie_rawRes="@raw/settings" />
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/anim2"
+                        style="@style/Lottie1"
+                        android:layout_weight="1"
+                        app:lottie_rawRes="@raw/settings" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/list2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/list1"
+                    android:layout_marginTop="-15dp"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:id="@+id/t1"
+                        style="@style/CategoriesSimpleTextview"
+                        android:layout_marginHorizontal="5dp"
+                        android:layout_weight="1"
+                        android:text="@string/categories_t1" />
+
+                    <TextView
+                        android:id="@+id/t2"
+                        style="@style/CategoriesSimpleTextview"
+                        android:layout_marginHorizontal="5dp"
+                        android:layout_weight="1"
+                        android:text="@string/categories_t2" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/list3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/list2"
+                    android:layout_marginTop="-20dp"
+                    tools:ignore="Orientation">
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/anim3"
+                        style="@style/Lottie1"
+                        android:layout_weight="1"
+                        app:lottie_rawRes="@raw/settings" />
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/anim4"
+                        style="@style/Lottie1"
+                        android:layout_weight="1"
+                        app:lottie_rawRes="@raw/settings" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/list4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/list3"
+                    android:layout_marginTop="-15dp"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:id="@+id/t3"
+                        style="@style/CategoriesSimpleTextview"
+                        android:layout_marginHorizontal="5dp"
+                        android:layout_weight="1"
+                        android:text="@string/categories_t3" />
+
+                    <TextView
+                        android:id="@+id/t4"
+                        style="@style/CategoriesSimpleTextview"
+                        android:layout_marginHorizontal="5dp"
+                        android:layout_weight="1"
+                        android:text="@string/categories_t4" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/list5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/list4"
+                    android:layout_marginTop="-20dp"
+                    tools:ignore="Orientation">
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/anim5"
+                        style="@style/Lottie1"
+                        android:layout_weight="1"
+                        app:lottie_rawRes="@raw/settings" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/list6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/list5"
+                    android:layout_marginTop="-15dp"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:id="@+id/t5"
+                        style="@style/CategoriesSimpleTextview"
+                        android:layout_marginHorizontal="50dp"
+                        android:layout_weight="1"
+                        android:text="@string/categories_t5" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
