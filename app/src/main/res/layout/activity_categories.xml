@@ -21,10 +21,9 @@
                 style="@style/CollapsingToolbarLayout"
                 app:title="@string/categories_title">
 
-                <com.airbnb.lottie.LottieAnimationView
-                    android:id="@+id/lottie"
-                    style="@style/AppbarLottie"
-                    app:lottie_rawRes="@raw/settings" />
+                <ImageView
+                    android:id="@+id/image"
+                    style="@style/AppbarImageview" />
 
                 <androidx.appcompat.widget.Toolbar
                     android:id="@+id/toolbar"
@@ -46,20 +45,20 @@
                     android:id="@+id/list1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="-20dp"
+                    android:layout_marginTop="0dp"
+                    android:visibility="invisible"
                     tools:ignore="Orientation">
 
-                    <com.airbnb.lottie.LottieAnimationView
-                        android:id="@+id/anim1"
-                        style="@style/Lottie1"
-                        android:layout_weight="1"
-                        app:lottie_rawRes="@raw/settings" />
+                    <ImageView
+                        android:id="@+id/pic1"
+                        style="@style/CategoryImageview"
+                        android:layout_weight="1" />
 
-                    <com.airbnb.lottie.LottieAnimationView
-                        android:id="@+id/anim2"
-                        style="@style/Lottie1"
-                        android:layout_weight="1"
-                        app:lottie_rawRes="@raw/settings" />
+                    <ImageView
+                        android:id="@+id/pic2"
+                        style="@style/CategoryImageview"
+                        android:layout_weight="1" />
+
                 </LinearLayout>
 
                 <LinearLayout
@@ -67,8 +66,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/list1"
-                    android:layout_marginTop="-15dp"
-                    android:visibility="visible">
+                    android:layout_marginTop="0dp"
+                    android:visibility="invisible">
 
                     <TextView
                         android:id="@+id/t1"
@@ -91,20 +90,19 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/list2"
-                    android:layout_marginTop="-20dp"
+                    android:layout_marginTop="0dp"
+                    android:visibility="invisible"
                     tools:ignore="Orientation">
 
-                    <com.airbnb.lottie.LottieAnimationView
-                        android:id="@+id/anim3"
-                        style="@style/Lottie1"
-                        android:layout_weight="1"
-                        app:lottie_rawRes="@raw/settings" />
+                    <ImageView
+                        android:id="@+id/pic3"
+                        style="@style/CategoryImageview"
+                        android:layout_weight="1" />
 
-                    <com.airbnb.lottie.LottieAnimationView
-                        android:id="@+id/anim4"
-                        style="@style/Lottie1"
-                        android:layout_weight="1"
-                        app:lottie_rawRes="@raw/settings" />
+                    <ImageView
+                        android:id="@+id/pic4"
+                        style="@style/CategoryImageview"
+                        android:layout_weight="1" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -112,8 +110,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/list3"
-                    android:layout_marginTop="-15dp"
-                    android:visibility="visible">
+                    android:layout_marginTop="0dp"
+                    android:visibility="invisible">
 
                     <TextView
                         android:id="@+id/t3"
@@ -136,14 +134,16 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/list4"
-                    android:layout_marginTop="-20dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:visibility="invisible"
                     tools:ignore="Orientation">
 
-                    <com.airbnb.lottie.LottieAnimationView
-                        android:id="@+id/anim5"
-                        style="@style/Lottie1"
-                        android:layout_weight="1"
-                        app:lottie_rawRes="@raw/settings" />
+                    <ImageView
+                        android:id="@+id/pic5"
+                        style="@style/CategoryImageview"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp" />
 
                 </LinearLayout>
 
@@ -153,12 +153,13 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@id/list5"
                     android:layout_marginTop="-15dp"
-                    android:visibility="visible">
+                    android:visibility="invisible">
 
                     <TextView
                         android:id="@+id/t5"
                         style="@style/CategoriesSimpleTextview"
                         android:layout_marginHorizontal="50dp"
+                        android:layout_marginTop="10dp"
                         android:layout_weight="1"
                         android:text="@string/categories_t5" />
 

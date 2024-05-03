@@ -22,7 +22,7 @@
     <string name="settings_t0">باتوجه به نسخه اندروید گوشی شما، برخی تنظیمات ممکن است در دسترس نباشد.</string>
     <string name="settings_t1">تغییر تم برنامه</string>
     <string name="settings_t2">تغییر سایز متن</string>
-    <string name="settings_t3">تغییر سایز متن</string>
+    <string name="settings_t3">این متن برای تست می‌باشد.</string>
     <string name="settings_dark">تم تاریک</string>
     <string name="settings_light">تم روشن</string>
     <string name="settings_default">پیشفرض</string>

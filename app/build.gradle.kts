@@ -46,7 +46,7 @@ dependencies {
     //animation
     implementation("com.andkulikov:transitionseverywhere:1.7.8")
     //lottie
-    implementation("com.airbnb.android:lottie:5.2.0")
+    implementation("com.airbnb.android:lottie:6.4.0")
     //circle image
     implementation("de.hdodenhof:circleimageview:3.1.0")
     //shape and view
