@@ -231,7 +231,6 @@
                     <androidx.cardview.widget.CardView
                         android:id="@+id/mcv1"
                         style="@style/TipsCardView"
-                        android:layout_height="200dp"
                         app:cardCornerRadius="30dp">
 
                         <ImageView
@@ -248,9 +247,8 @@
                     <androidx.cardview.widget.CardView
                         android:id="@+id/mcv2"
                         style="@style/TipsCardView"
-                        android:layout_height="200dp"
                         app:cardCornerRadius="30dp">
-.
+
                         <ImageView
                             android:id="@+id/miv2"
                             style="@style/TipsImageView" />

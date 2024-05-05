@@ -9,7 +9,7 @@
     <string name="home_cat">دسته بندی ها</string>
     <string name="home_about">درباره ما</string>
     <string name="home_test1">کتابخانه من ؟!</string>
-    <string name="home_test2">چرا کتابخانه من؟</string>
+    <string name="home_test2">چرا کتاب؟</string>
 
     //menu_drawer
     <string name="menu_rate">امتیاز به برنامه</string>
@@ -44,4 +44,50 @@
     <string name="categories_t3">غمگین</string>
     <string name="categories_t4">خنده و سرگرمی</string>
     <string name="categories_t5">درس آموز</string>
+
+    //activity_stories
+    <string name="stories_title">همه داستان ها</string>
+
+    <string name="stories_tsto1">ارتباط قلبی</string>
+    <string name="stories_tsto2">ادیسون</string>
+    <string name="stories_tsto3">چوپان</string>
+    <string name="stories_tsto4">وقتی که او مرد</string>
+    <string name="stories_tsto5">یک لنگه کفش</string>
+    <string name="stories_tsto6">مجازات شغالان</string>
+    <string name="stories_tsto7">خبر مرگ نوبل</string>
+    <string name="stories_tsto8">مراقبت</string>
+    <string name="stories_tsto9">آتش و گنجشک</string>
+    <string name="stories_tsto10">خطر آسایش</string>
+    <string name="stories_tsto11">پیرمرد بازنشسته</string>
+    <string name="stories_tsto12">پسرک و خدا</string>
+    <string name="stories_tsto13">ابوریحان و مزدور</string>
+    <string name="stories_tsto14">پنجره طلایی</string>
+    <string name="stories_tsto15">دیدن خدا</string>
+    <string name="stories_tsto16">اول رئیس</string>
+    <string name="stories_tsto17">داروی جدید</string>
+    <string name="stories_tsto18">پدر و پسر</string>
+    <string name="stories_tsto19">پادشاه بی خرد</string>
+    <string name="stories_tsto20">پندهای لقمان</string>
+    <string name="stories_tsto21">پند دزد</string>
+    <string name="stories_tsto22">پیرمرد</string>
+    <string name="stories_tsto23">تور تفریحی پیرزن ها</string>
+    <string name="stories_tsto24">بازرگان و انوشیروان</string>
+    <string name="stories_tsto25">بلیط سیرک</string>
+    <string name="stories_tsto26">بهترین شمشیرزن</string>
+    <string name="stories_tsto27">تلفن و طلاق</string>
+    <string name="stories_tsto28">تقلا</string>
+    <string name="stories_tsto29">بهترین هدیه</string>
+    <string name="stories_tsto30">راننده کامیون</string>
+    <string name="stories_tsto31">مراحل تشرف</string>
+    <string name="stories_tsto32">پلیکان</string>
+    <string name="stories_tsto33">جنگ و نیزه</string>
+    <string name="stories_tsto34">ادعای خدایی</string>
+    <string name="stories_tsto35">فریب</string>
+    <string name="stories_tsto36">بیکاری</string>
+    <string name="stories_tsto37">مرد فقیر</string>
+    <string name="stories_tsto38">توقع زیاد</string>
+    <string name="stories_tsto39">پیرمرد خردمند</string>
+    <string name="stories_tsto40">خانم و آقای لطفی</string>
+    <string name="stories_tsto41">جواب فورد</string>
+    <string name="stories_tsto42">خط صاف</string>
 </resources>

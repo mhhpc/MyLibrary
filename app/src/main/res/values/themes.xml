@@ -23,7 +23,7 @@
 
     <style name="TipsCardView">
         <item name="android:layout_width">0dp</item>
-        <item name="android:layout_height">250dp</item>
+        <item name="android:layout_height">200dp</item>
         <item name="android:layout_margin">5dp</item>
         <item name="android:layout_weight">1</item>
         <item name="android:visibility">visible</item>

@@ -103,16 +103,30 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Picasso.get().load("https://s8.uupload.ir/files/_33dde004-9358-4709-97b8-41deca4d338e(1)_2sk.jpg").into(ImageView2);
 
         //text onclick
-        @SuppressLint("CutPasteId") TextView txt1 = (TextView) findViewById(R.id.t2);
+        @SuppressLint("CutPasteId") TextView txt1 = (TextView) findViewById(R.id.t1);
         txt1.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, Stories_activity.class));
+            }
+        });
+
+        @SuppressLint("CutPasteId") TextView txt2 = (TextView) findViewById(R.id.t2);
+        txt2.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, Categories_activity.class));
             }
         });
 
         //Image buttons onclick
-        @SuppressLint("CutPasteId") ImageView btn1 = (ImageView) findViewById(R.id.b2);
+        @SuppressLint("CutPasteId") ImageView btn1 = (ImageView) findViewById(R.id.b1);
         btn1.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, Stories_activity.class));
+            }
+        });
+
+        @SuppressLint("CutPasteId") ImageView btn2 = (ImageView) findViewById(R.id.b2);
+        btn2.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, Categories_activity.class));
             }
