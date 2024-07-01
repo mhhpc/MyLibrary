@@ -8,10 +8,12 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.google.android.material.appbar.CollapsingToolbarLayout;
+import com.squareup.picasso.Picasso;
 import com.transitionseverywhere.Slide;
 import com.transitionseverywhere.Transition;
 import com.transitionseverywhere.TransitionManager;
@@ -62,6 +64,17 @@ public class Stories_activity extends AppCompatActivity {
         final LinearLayout t8 = findViewById(R.id.menu8);
         final LinearLayout t9 = findViewById(R.id.menu9);
         final LinearLayout t10 = findViewById(R.id.menu10);
+        final LinearLayout t11 = findViewById(R.id.menu11);
+        final LinearLayout t12 = findViewById(R.id.menu12);
+        final LinearLayout t13 = findViewById(R.id.menu13);
+        final LinearLayout t14 = findViewById(R.id.menu14);
+        final LinearLayout t15 = findViewById(R.id.menu15);
+        final LinearLayout t16 = findViewById(R.id.menu16);
+        final LinearLayout t17 = findViewById(R.id.menu17);
+        final LinearLayout t18 = findViewById(R.id.menu18);
+        final LinearLayout t19 = findViewById(R.id.menu19);
+        final LinearLayout t20 = findViewById(R.id.menu20);
+        final LinearLayout t21 = findViewById(R.id.menu21);
 
 
         new Handler().postDelayed(new Runnable() {
@@ -80,6 +93,17 @@ public class Stories_activity extends AppCompatActivity {
                 t8.setVisibility(View.VISIBLE);
                 t9.setVisibility(View.VISIBLE);
                 t10.setVisibility(View.VISIBLE);
+                t11.setVisibility(View.VISIBLE);
+                t12.setVisibility(View.VISIBLE);
+                t13.setVisibility(View.VISIBLE);
+                t14.setVisibility(View.VISIBLE);
+                t15.setVisibility(View.VISIBLE);
+                t16.setVisibility(View.VISIBLE);
+                t17.setVisibility(View.VISIBLE);
+                t18.setVisibility(View.VISIBLE);
+                t19.setVisibility(View.VISIBLE);
+                t20.setVisibility(View.VISIBLE);
+                t21.setVisibility(View.VISIBLE);
             }
         }, 200);
 
@@ -95,5 +119,9 @@ public class Stories_activity extends AppCompatActivity {
         animationDrawable2.setEnterFadeDuration(2000);
         animationDrawable2.setExitFadeDuration(4000);
         animationDrawable2.start();
+
+        //Image links
+        ImageView imageView0 = (ImageView) findViewById(R.id.image);
+        Picasso.get().load("https://s8.uupload.ir/files/open-book_auok.png").placeholder(R.drawable.logo2).into(imageView0);
     }
 }

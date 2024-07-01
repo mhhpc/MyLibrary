@@ -440,6 +440,446 @@
                     </androidx.cardview.widget.CardView>
                 </LinearLayout>
 
+                <LinearLayout
+                    android:id="@+id/menu11"
+                    style="@style/TipsLinearLayout"
+                    android:layout_below="@id/menu10"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginTop="5dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/mcv21"
+                        style="@style/TipsCardView"
+                        app:cardCornerRadius="30dp">
+
+                        <ImageView
+                            android:id="@+id/miv21"
+                            style="@style/TipsImageView" />
+
+                        <TextView
+                            android:id="@+id/tv21"
+                            style="@style/TipsTextView"
+                            android:text="@string/stories_tsto21" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/mcv22"
+                        style="@style/TipsCardView"
+                        app:cardCornerRadius="30dp">
+
+                        <ImageView
+                            android:id="@+id/miv22"
+                            style="@style/TipsImageView" />
+
+                        <TextView
+                            android:id="@+id/tv22"
+                            style="@style/TipsTextView"
+                            android:text="@string/stories_tsto22" />
+
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/menu12"
+                    style="@style/TipsLinearLayout"
+                    android:layout_below="@id/menu11"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginTop="5dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/mcv23"
+                        style="@style/TipsCardView"
+                        app:cardCornerRadius="30dp">
+
+                        <ImageView
+                            android:id="@+id/miv23"
+                            style="@style/TipsImageView" />
+
+                        <TextView
+                            android:id="@+id/tv23"
+                            style="@style/TipsTextView"
+                            android:text="@string/stories_tsto23" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/mcv24"
+                        style="@style/TipsCardView"
+                        app:cardCornerRadius="30dp">
+
+                        <ImageView
+                            android:id="@+id/miv24"
+                            style="@style/TipsImageView" />
+
+                        <TextView
+                            android:id="@+id/tv24"
+                            style="@style/TipsTextView"
+                            android:text="@string/stories_tsto24" />
+
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/menu13"
+                    style="@style/TipsLinearLayout"
+                    android:layout_below="@id/menu12"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginTop="5dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/mcv25"
+                        style="@style/TipsCardView"
+                        app:cardCornerRadius="30dp">
+
+                        <ImageView
+                            android:id="@+id/miv25"
+                            style="@style/TipsImageView" />
+
+                        <TextView
+                            android:id="@+id/tv25"
+                            style="@style/TipsTextView"
+                            android:text="@string/stories_tsto25" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/mcv26"
+                        style="@style/TipsCardView"
+                        app:cardCornerRadius="30dp">
+
+                        <ImageView
+                            android:id="@+id/miv26"
+                            style="@style/TipsImageView" />
+
+                        <TextView
+                            android:id="@+id/tv26"
+                            style="@style/TipsTextView"
+                            android:text="@string/stories_tsto26" />
+
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/menu14"
+                    style="@style/TipsLinearLayout"
+                    android:layout_below="@id/menu13"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginTop="5dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/mcv27"
+                        style="@style/TipsCardView"
+                        app:cardCornerRadius="30dp">
+
+                        <ImageView
+                            android:id="@+id/miv27"
+                            style="@style/TipsImageView" />
+
+                        <TextView
+                            android:id="@+id/tv27"
+                            style="@style/TipsTextView"
+                            android:text="@string/stories_tsto27" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/mcv28"
+                        style="@style/TipsCardView"
+                        app:cardCornerRadius="30dp">
+
+                        <ImageView
+                            android:id="@+id/miv28"
+                            style="@style/TipsImageView" />
+
+                        <TextView
+                            android:id="@+id/tv28"
+                            style="@style/TipsTextView"
+                            android:text="@string/stories_tsto28" />
+
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/menu15"
+                    style="@style/TipsLinearLayout"
+                    android:layout_below="@id/menu14"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginTop="5dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/mcv29"
+                        style="@style/TipsCardView"
+                        app:cardCornerRadius="30dp">
+
+                        <ImageView
+                            android:id="@+id/miv29"
+                            style="@style/TipsImageView" />
+
+                        <TextView
+                            android:id="@+id/tv29"
+                            style="@style/TipsTextView"
+                            android:text="@string/stories_tsto29" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/mcv30"
+                        style="@style/TipsCardView"
+                        app:cardCornerRadius="30dp">
+
+                        <ImageView
+                            android:id="@+id/miv30"
+                            style="@style/TipsImageView" />
+
+                        <TextView
+                            android:id="@+id/tv30"
+                            style="@style/TipsTextView"
+                            android:text="@string/stories_tsto22" />
+
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/menu16"
+                    style="@style/TipsLinearLayout"
+                    android:layout_below="@id/menu15"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginTop="5dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/mcv31"
+                        style="@style/TipsCardView"
+                        app:cardCornerRadius="30dp">
+
+                        <ImageView
+                            android:id="@+id/miv31"
+                            style="@style/TipsImageView" />
+
+                        <TextView
+                            android:id="@+id/tv31"
+                            style="@style/TipsTextView"
+                            android:text="@string/stories_tsto31" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/mcv32"
+                        style="@style/TipsCardView"
+                        app:cardCornerRadius="30dp">
+
+                        <ImageView
+                            android:id="@+id/miv32"
+                            style="@style/TipsImageView" />
+
+                        <TextView
+                            android:id="@+id/tv32"
+                            style="@style/TipsTextView"
+                            android:text="@string/stories_tsto32" />
+
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/menu17"
+                    style="@style/TipsLinearLayout"
+                    android:layout_below="@id/menu16"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginTop="5dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/mcv33"
+                        style="@style/TipsCardView"
+                        app:cardCornerRadius="30dp">
+
+                        <ImageView
+                            android:id="@+id/miv33"
+                            style="@style/TipsImageView" />
+
+                        <TextView
+                            android:id="@+id/tv33"
+                            style="@style/TipsTextView"
+                            android:text="@string/stories_tsto33" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/mcv34"
+                        style="@style/TipsCardView"
+                        app:cardCornerRadius="30dp">
+
+                        <ImageView
+                            android:id="@+id/miv34"
+                            style="@style/TipsImageView" />
+
+                        <TextView
+                            android:id="@+id/tv34"
+                            style="@style/TipsTextView"
+                            android:text="@string/stories_tsto34" />
+
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/menu18"
+                    style="@style/TipsLinearLayout"
+                    android:layout_below="@id/menu17"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginTop="5dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/mcv35"
+                        style="@style/TipsCardView"
+                        app:cardCornerRadius="30dp">
+
+                        <ImageView
+                            android:id="@+id/miv35"
+                            style="@style/TipsImageView" />
+
+                        <TextView
+                            android:id="@+id/tv35"
+                            style="@style/TipsTextView"
+                            android:text="@string/stories_tsto35" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/mcv36"
+                        style="@style/TipsCardView"
+                        app:cardCornerRadius="30dp">
+
+                        <ImageView
+                            android:id="@+id/miv36"
+                            style="@style/TipsImageView" />
+
+                        <TextView
+                            android:id="@+id/tv36"
+                            style="@style/TipsTextView"
+                            android:text="@string/stories_tsto36" />
+
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/menu19"
+                    style="@style/TipsLinearLayout"
+                    android:layout_below="@id/menu18"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginTop="5dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/mcv37"
+                        style="@style/TipsCardView"
+                        app:cardCornerRadius="30dp">
+
+                        <ImageView
+                            android:id="@+id/miv37"
+                            style="@style/TipsImageView" />
+
+                        <TextView
+                            android:id="@+id/tv37"
+                            style="@style/TipsTextView"
+                            android:text="@string/stories_tsto37" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/mcv38"
+                        style="@style/TipsCardView"
+                        app:cardCornerRadius="30dp">
+
+                        <ImageView
+                            android:id="@+id/miv38"
+                            style="@style/TipsImageView" />
+
+                        <TextView
+                            android:id="@+id/tv38"
+                            style="@style/TipsTextView"
+                            android:text="@string/stories_tsto38" />
+
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/menu20"
+                    style="@style/TipsLinearLayout"
+                    android:layout_below="@id/menu19"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginTop="5dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/mcv39"
+                        style="@style/TipsCardView"
+                        app:cardCornerRadius="30dp">
+
+                        <ImageView
+                            android:id="@+id/miv39"
+                            style="@style/TipsImageView" />
+
+                        <TextView
+                            android:id="@+id/tv39"
+                            style="@style/TipsTextView"
+                            android:text="@string/stories_tsto39" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/mcv40"
+                        style="@style/TipsCardView"
+                        app:cardCornerRadius="30dp">
+
+                        <ImageView
+                            android:id="@+id/miv40"
+                            style="@style/TipsImageView" />
+
+                        <TextView
+                            android:id="@+id/tv40"
+                            style="@style/TipsTextView"
+                            android:text="@string/stories_tsto40" />
+
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/menu21"
+                    style="@style/TipsLinearLayout"
+                    android:layout_below="@id/menu20"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginTop="5dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/mcv41"
+                        style="@style/TipsCardView"
+                        app:cardCornerRadius="30dp">
+
+                        <ImageView
+                            android:id="@+id/miv41"
+                            style="@style/TipsImageView" />
+
+                        <TextView
+                            android:id="@+id/tv41"
+                            style="@style/TipsTextView"
+                            android:text="@string/stories_tsto41" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/mcv42"
+                        style="@style/TipsCardView"
+                        app:cardCornerRadius="30dp">
+
+                        <ImageView
+                            android:id="@+id/miv42"
+                            style="@style/TipsImageView" />
+
+                        <TextView
+                            android:id="@+id/tv42"
+                            style="@style/TipsTextView"
+                            android:text="@string/stories_tsto42" />
+
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+
             </RelativeLayout>
 
         </androidx.core.widget.NestedScrollView>
