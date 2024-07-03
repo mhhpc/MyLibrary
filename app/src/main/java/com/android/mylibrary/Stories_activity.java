@@ -1,8 +1,13 @@
 package com.android.mylibrary;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
+import androidx.core.app.ActivityOptionsCompat;
+import androidx.core.util.Pair;
 import androidx.core.widget.NestedScrollView;
 
+import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
 import android.os.Handler;
@@ -120,8 +125,51 @@ public class Stories_activity extends AppCompatActivity {
         animationDrawable2.setExitFadeDuration(4000);
         animationDrawable2.start();
 
+        @SuppressLint("CutPasteId") CardView cv = (CardView) findViewById(R.id.mcv1);
+        cv.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Pair<View, String> pair1 = Pair.create(findViewById(R.id.miv1), "trans1");
+                Pair<View, String> pair2 = Pair.create(findViewById(R.id.tv1), "trans2");
+
+                ActivityOptionsCompat options = ActivityOptionsCompat.makeSceneTransitionAnimation(Stories_activity.this, pair1, pair2);
+
+                Intent intent = new Intent(Stories_activity.this, Sto1_activity.class);
+                startActivity(intent, options.toBundle());
+            }
+        });
+
         //Image links
         ImageView imageView0 = (ImageView) findViewById(R.id.image);
         Picasso.get().load("https://s8.uupload.ir/files/open-book_auok.png").placeholder(R.drawable.logo2).into(imageView0);
+
+        ImageView imageView1 = (ImageView) findViewById(R.id.miv1);
+        Picasso.get().load("https://s8.uupload.ir/files/360_f_666470913_rnumwfo72pdcddirj87klatwznvqcdof_jy4o.jpg").placeholder(R.drawable.logo3).into(imageView1);
+
+        ImageView imageView2 = (ImageView) findViewById(R.id.miv2);
+        Picasso.get().load("https://s8.uupload.ir/files/www-116_brg0.jpg").placeholder(R.drawable.logo3).into(imageView2);
+
+        ImageView imageView3 = (ImageView) findViewById(R.id.miv3);
+        Picasso.get().load("https://s8.uupload.ir/files/360_f_666470913_rnumwfo72pdcddirj87klatwznvqcdof_jy4o.jpg").placeholder(R.drawable.logo3).into(imageView3);
+
+        ImageView imageView4 = (ImageView) findViewById(R.id.miv4);
+        Picasso.get().load("https://s8.uupload.ir/files/360_f_666470913_rnumwfo72pdcddirj87klatwznvqcdof_jy4o.jpg").placeholder(R.drawable.logo3).into(imageView4);
+
+        ImageView imageView5 = (ImageView) findViewById(R.id.miv5);
+        Picasso.get().load("https://s8.uupload.ir/files/360_f_666470913_rnumwfo72pdcddirj87klatwznvqcdof_jy4o.jpg").placeholder(R.drawable.logo3).into(imageView5);
+
+        ImageView imageView6 = (ImageView) findViewById(R.id.miv6);
+        Picasso.get().load("https://s8.uupload.ir/files/360_f_666470913_rnumwfo72pdcddirj87klatwznvqcdof_jy4o.jpg").placeholder(R.drawable.logo3).into(imageView6);
+
+        ImageView imageView7 = (ImageView) findViewById(R.id.miv7);
+        Picasso.get().load("https://s8.uupload.ir/files/360_f_666470913_rnumwfo72pdcddirj87klatwznvqcdof_jy4o.jpg").placeholder(R.drawable.logo3).into(imageView7);
+
+        ImageView imageView8 = (ImageView) findViewById(R.id.miv8);
+        Picasso.get().load("https://s8.uupload.ir/files/360_f_666470913_rnumwfo72pdcddirj87klatwznvqcdof_jy4o.jpg").placeholder(R.drawable.logo3).into(imageView8);
+
+        ImageView imageView9 = (ImageView) findViewById(R.id.miv9);
+        Picasso.get().load("https://s8.uupload.ir/files/360_f_666470913_rnumwfo72pdcddirj87klatwznvqcdof_jy4o.jpg").placeholder(R.drawable.logo3).into(imageView9);
+
+        ImageView imageView10 = (ImageView) findViewById(R.id.miv10);
+        Picasso.get().load("https://s8.uupload.ir/files/360_f_666470913_rnumwfo72pdcddirj87klatwznvqcdof_jy4o.jpg").placeholder(R.drawable.logo3).into(imageView10);
     }
 }

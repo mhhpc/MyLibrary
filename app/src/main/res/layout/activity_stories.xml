@@ -54,12 +54,14 @@
 
                         <ImageView
                             android:id="@+id/miv1"
-                            style="@style/TipsImageView" />
+                            style="@style/TipsImageView"
+                            android:transitionName="trans1" />
 
                         <TextView
                             android:id="@+id/tv1"
                             style="@style/TipsTextView"
-                            android:text="@string/stories_tsto1" />
+                            android:text="@string/stories_tsto1"
+                            android:transitionName="trans2" />
 
                     </androidx.cardview.widget.CardView>
 

@@ -12,5 +12,7 @@
         <item name="fontFamily">@font/font</item>
         <item name="android:forceDarkAllowed" tools:ignore="NewApi">true</item>
         <item name="android:fontFamily">@font/font</item>
+        <!-- Transition between activities. -->
+        <item name="android:windowContentTransitions">true</item>
     </style>
 </resources>
