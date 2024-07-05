@@ -16,6 +16,37 @@
         <item name="android:windowContentTransitions">true</item>
     </style>
 
+    <style name="RelativeView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:visibility">visible</item>
+    </style>
+
+    <style name="TopView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">200dp</item>
+        <item name="elevation">4dp</item>
+        <item name="shape_arc_height">30dp</item>
+        <item name="shape_arc_position">bottom</item>
+    </style>
+
+    <style name="TopImageView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="elevation">4dp</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
+    <style name="PhoneImageView2">
+        <item name="android:src">@drawable/error</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:scaleType">centerCrop</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:visibility">visible</item>
+    </style>
+
     <style name="TipsLinearLayout">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">match_parent</item>
