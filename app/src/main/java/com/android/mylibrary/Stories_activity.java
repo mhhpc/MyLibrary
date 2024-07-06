@@ -125,8 +125,8 @@ public class Stories_activity extends AppCompatActivity {
         animationDrawable2.setExitFadeDuration(4000);
         animationDrawable2.start();
 
-        @SuppressLint("CutPasteId") CardView cv = (CardView) findViewById(R.id.mcv1);
-        cv.setOnClickListener(new View.OnClickListener() {
+        @SuppressLint("CutPasteId") CardView cv1 = (CardView) findViewById(R.id.mcv1);
+        cv1.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Pair<View, String> pair1 = Pair.create(findViewById(R.id.miv1), "trans1");
                 Pair<View, String> pair2 = Pair.create(findViewById(R.id.tv1), "trans2");
@@ -138,15 +138,28 @@ public class Stories_activity extends AppCompatActivity {
             }
         });
 
+        @SuppressLint("CutPasteId") CardView cv2 = (CardView) findViewById(R.id.mcv2);
+        cv2.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Pair<View, String> pair1 = Pair.create(findViewById(R.id.miv2), "trans1");
+                Pair<View, String> pair2 = Pair.create(findViewById(R.id.tv2), "trans2");
+
+                ActivityOptionsCompat options = ActivityOptionsCompat.makeSceneTransitionAnimation(Stories_activity.this, pair1, pair2);
+
+                Intent intent = new Intent(Stories_activity.this, Sto2_activity.class);
+                startActivity(intent, options.toBundle());
+            }
+        });
+
         //Image links
         ImageView imageView0 = (ImageView) findViewById(R.id.image);
         Picasso.get().load("https://s8.uupload.ir/files/open-book_auok.png").placeholder(R.drawable.logo2).into(imageView0);
 
         ImageView imageView1 = (ImageView) findViewById(R.id.miv1);
-        Picasso.get().load("https://s8.uupload.ir/files/360_f_666470913_rnumwfo72pdcddirj87klatwznvqcdof_jy4o.jpg").placeholder(R.drawable.logo3).into(imageView1);
+        Picasso.get().load("https://s8.uupload.ir/files/360_f_688508974_o73n5n95kfabmllpq3kmqci5grlqkvnj_3oqo.jpg").placeholder(R.drawable.logo3).into(imageView1);
 
         ImageView imageView2 = (ImageView) findViewById(R.id.miv2);
-        Picasso.get().load("https://s8.uupload.ir/files/www-116_brg0.jpg").placeholder(R.drawable.logo3).into(imageView2);
+        Picasso.get().load("https://s8.uupload.ir/files/ed2b1b0ad5e44bd58d05de6a8558b19e_djlo.jpg").placeholder(R.drawable.logo3).into(imageView2);
 
         ImageView imageView3 = (ImageView) findViewById(R.id.miv3);
         Picasso.get().load("https://s8.uupload.ir/files/360_f_666470913_rnumwfo72pdcddirj87klatwznvqcdof_jy4o.jpg").placeholder(R.drawable.logo3).into(imageView3);

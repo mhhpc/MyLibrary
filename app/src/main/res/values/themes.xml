@@ -38,13 +38,13 @@
         <item name="android:scaleType">centerCrop</item>
     </style>
 
-    <style name="PhoneImageView2">
+    <style name="MainImageView">
         <item name="android:src">@drawable/error</item>
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:scaleType">centerCrop</item>
         <item name="android:adjustViewBounds">true</item>
-        <item name="android:visibility">visible</item>
+        <item name="android:visibility">invisible</item>
     </style>
 
     <style name="TipsLinearLayout">
@@ -78,6 +78,18 @@
         <item name="android:textColor">#000000</item>
         <item name="android:textSize">17sp</item>
         <item name="android:background">@drawable/corner_card</item>
+    </style>
+
+    <style name="StoTitle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:background">@drawable/corner_title</item>
     </style>
 
     <style name="AppbarTitle">

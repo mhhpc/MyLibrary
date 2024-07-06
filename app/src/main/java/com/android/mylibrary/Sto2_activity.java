@@ -7,24 +7,20 @@ import android.os.Handler;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
-import androidx.core.widget.NestedScrollView;
 
 import com.squareup.picasso.Picasso;
 import com.transitionseverywhere.Fade;
-import com.transitionseverywhere.Slide;
 import com.transitionseverywhere.Transition;
 import com.transitionseverywhere.TransitionManager;
 
 import java.util.Random;
 
-public class Sto1_activity extends AppCompatActivity {
+public class Sto2_activity extends AppCompatActivity {
 
     private TextSize settingsManager;
 
@@ -34,8 +30,9 @@ public class Sto1_activity extends AppCompatActivity {
         setContentView(R.layout.activity_story);
 
         //Set text
-        ((TextView) findViewById(R.id.tv1)).setText(getString(R.string.stories_tsto1));
-        ((TextView) findViewById(R.id.t1)).setText(getString(R.string.sto1_t1));
+        ((TextView) findViewById(R.id.tv1)).setText(getString(R.string.stories_tsto2));
+        ((TextView) findViewById(R.id.t1)).setText(getString(R.string.sto2_t1));
+        ((TextView) findViewById(R.id.t2)).setText(getString(R.string.sto2_t2));
 
         //Change text size
         settingsManager = new TextSize(this);
@@ -78,8 +75,8 @@ public class Sto1_activity extends AppCompatActivity {
                 TransitionManager.beginDelayedTransition(r, transition);
                 t0.setVisibility(View.VISIBLE);
                 t1.setVisibility(View.VISIBLE);
-                t2.setVisibility(View.GONE);
-                t3.setVisibility(View.GONE);
+                t2.setVisibility(View.VISIBLE);
+                t3.setVisibility(View.VISIBLE);
                 t4.setVisibility(View.GONE);
                 t5.setVisibility(View.GONE);
                 t6.setVisibility(View.GONE);
@@ -144,7 +141,10 @@ public class Sto1_activity extends AppCompatActivity {
         }
 
         ImageView imageView1 = (ImageView) findViewById(R.id.imv1);
-        Picasso.get().load("https://s8.uupload.ir/files/360_f_688508974_o73n5n95kfabmllpq3kmqci5grlqkvnj_3oqo.jpg").placeholder(R.drawable.progress_animation).error(R.drawable.error).into(imageView1);
+        Picasso.get().load("https://s8.uupload.ir/files/ed2b1b0ad5e44bd58d05de6a8558b19e_djlo.jpg").placeholder(R.drawable.progress_animation).error(R.drawable.error).into(imageView1);
+
+        ImageView imageView2 = (ImageView) findViewById(R.id.im1);
+        Picasso.get().load("https://s8.uupload.ir/files/apartments-on-fire-migrated_nhrm.jpg").placeholder(R.drawable.progress_animation).error(R.drawable.error).into(imageView2);
 
     }
 }

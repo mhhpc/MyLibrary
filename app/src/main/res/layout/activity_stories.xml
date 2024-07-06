@@ -72,12 +72,14 @@
 
                         <ImageView
                             android:id="@+id/miv2"
-                            style="@style/TipsImageView" />
+                            style="@style/TipsImageView"
+                            android:transitionName="trans1" />
 
                         <TextView
                             android:id="@+id/tv2"
                             style="@style/TipsTextView"
-                            android:text="@string/stories_tsto2" />
+                            android:text="@string/stories_tsto2"
+                            android:transitionName="trans2" />
 
                     </androidx.cardview.widget.CardView>
                 </LinearLayout>
