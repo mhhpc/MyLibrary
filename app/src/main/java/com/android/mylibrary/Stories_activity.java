@@ -151,6 +151,84 @@ public class Stories_activity extends AppCompatActivity {
             }
         });
 
+        @SuppressLint("CutPasteId") CardView cv3 = (CardView) findViewById(R.id.mcv3);
+        cv3.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Pair<View, String> pair1 = Pair.create(findViewById(R.id.miv3), "trans1");
+                Pair<View, String> pair2 = Pair.create(findViewById(R.id.tv3), "trans2");
+
+                ActivityOptionsCompat options = ActivityOptionsCompat.makeSceneTransitionAnimation(Stories_activity.this, pair1, pair2);
+
+                Intent intent = new Intent(Stories_activity.this, Sto3_activity.class);
+                startActivity(intent, options.toBundle());
+            }
+        });
+
+        @SuppressLint("CutPasteId") CardView cv4 = (CardView) findViewById(R.id.mcv4);
+        cv4.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Pair<View, String> pair1 = Pair.create(findViewById(R.id.miv4), "trans1");
+                Pair<View, String> pair2 = Pair.create(findViewById(R.id.tv4), "trans2");
+
+                ActivityOptionsCompat options = ActivityOptionsCompat.makeSceneTransitionAnimation(Stories_activity.this, pair1, pair2);
+
+                Intent intent = new Intent(Stories_activity.this, Sto4_activity.class);
+                startActivity(intent, options.toBundle());
+            }
+        });
+
+        @SuppressLint("CutPasteId") CardView cv5 = (CardView) findViewById(R.id.mcv5);
+        cv5.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Pair<View, String> pair1 = Pair.create(findViewById(R.id.miv5), "trans1");
+                Pair<View, String> pair2 = Pair.create(findViewById(R.id.tv5), "trans2");
+
+                ActivityOptionsCompat options = ActivityOptionsCompat.makeSceneTransitionAnimation(Stories_activity.this, pair1, pair2);
+
+                Intent intent = new Intent(Stories_activity.this, Sto5_activity.class);
+                startActivity(intent, options.toBundle());
+            }
+        });
+
+        @SuppressLint("CutPasteId") CardView cv6 = (CardView) findViewById(R.id.mcv6);
+        cv6.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Pair<View, String> pair1 = Pair.create(findViewById(R.id.miv6), "trans1");
+                Pair<View, String> pair2 = Pair.create(findViewById(R.id.tv6), "trans2");
+
+                ActivityOptionsCompat options = ActivityOptionsCompat.makeSceneTransitionAnimation(Stories_activity.this, pair1, pair2);
+
+                Intent intent = new Intent(Stories_activity.this, Sto6_activity.class);
+                startActivity(intent, options.toBundle());
+            }
+        });
+
+        @SuppressLint("CutPasteId") CardView cv7 = (CardView) findViewById(R.id.mcv7);
+        cv7.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Pair<View, String> pair1 = Pair.create(findViewById(R.id.miv7), "trans1");
+                Pair<View, String> pair2 = Pair.create(findViewById(R.id.tv7), "trans2");
+
+                ActivityOptionsCompat options = ActivityOptionsCompat.makeSceneTransitionAnimation(Stories_activity.this, pair1, pair2);
+
+                Intent intent = new Intent(Stories_activity.this, Sto7_activity.class);
+                startActivity(intent, options.toBundle());
+            }
+        });
+
+        @SuppressLint("CutPasteId") CardView cv8 = (CardView) findViewById(R.id.mcv8);
+        cv8.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Pair<View, String> pair1 = Pair.create(findViewById(R.id.miv8), "trans1");
+                Pair<View, String> pair2 = Pair.create(findViewById(R.id.tv8), "trans2");
+
+                ActivityOptionsCompat options = ActivityOptionsCompat.makeSceneTransitionAnimation(Stories_activity.this, pair1, pair2);
+
+                Intent intent = new Intent(Stories_activity.this, Sto8_activity.class);
+                startActivity(intent, options.toBundle());
+            }
+        });
+
         //Image links
         ImageView imageView0 = (ImageView) findViewById(R.id.image);
         Picasso.get().load("https://s8.uupload.ir/files/open-book_auok.png").placeholder(R.drawable.logo2).into(imageView0);
@@ -162,22 +240,22 @@ public class Stories_activity extends AppCompatActivity {
         Picasso.get().load("https://s8.uupload.ir/files/ed2b1b0ad5e44bd58d05de6a8558b19e_djlo.jpg").placeholder(R.drawable.logo3).into(imageView2);
 
         ImageView imageView3 = (ImageView) findViewById(R.id.miv3);
-        Picasso.get().load("https://s8.uupload.ir/files/360_f_666470913_rnumwfo72pdcddirj87klatwznvqcdof_jy4o.jpg").placeholder(R.drawable.logo3).into(imageView3);
+        Picasso.get().load("https://s8.uupload.ir/files/choopan_5ssq.jpg").placeholder(R.drawable.logo3).into(imageView3);
 
         ImageView imageView4 = (ImageView) findViewById(R.id.miv4);
-        Picasso.get().load("https://s8.uupload.ir/files/360_f_666470913_rnumwfo72pdcddirj87klatwznvqcdof_jy4o.jpg").placeholder(R.drawable.logo3).into(imageView4);
+        Picasso.get().load("https://s8.uupload.ir/files/most-expensive-homes-042616-hero1_v0hj.jpg").placeholder(R.drawable.logo3).into(imageView4);
 
         ImageView imageView5 = (ImageView) findViewById(R.id.miv5);
-        Picasso.get().load("https://s8.uupload.ir/files/360_f_666470913_rnumwfo72pdcddirj87klatwznvqcdof_jy4o.jpg").placeholder(R.drawable.logo3).into(imageView5);
+        Picasso.get().load("https://s8.uupload.ir/files/f_-bus-invece-di-treni-bxyc_6ya4.jpg").placeholder(R.drawable.logo3).into(imageView5);
 
         ImageView imageView6 = (ImageView) findViewById(R.id.miv6);
-        Picasso.get().load("https://s8.uupload.ir/files/360_f_666470913_rnumwfo72pdcddirj87klatwznvqcdof_jy4o.jpg").placeholder(R.drawable.logo3).into(imageView6);
+        Picasso.get().load("https://s8.uupload.ir/files/jackal-symbolism-and-meaning-04a4efbd_3df4.jpg").placeholder(R.drawable.logo3).into(imageView6);
 
         ImageView imageView7 = (ImageView) findViewById(R.id.miv7);
-        Picasso.get().load("https://s8.uupload.ir/files/360_f_666470913_rnumwfo72pdcddirj87klatwznvqcdof_jy4o.jpg").placeholder(R.drawable.logo3).into(imageView7);
+        Picasso.get().load("https://s8.uupload.ir/files/alfred-bernhard-nobel-portrait-emil-osterman-foundation-1915_tkim.jpg").placeholder(R.drawable.logo3).into(imageView7);
 
         ImageView imageView8 = (ImageView) findViewById(R.id.miv8);
-        Picasso.get().load("https://s8.uupload.ir/files/360_f_666470913_rnumwfo72pdcddirj87klatwznvqcdof_jy4o.jpg").placeholder(R.drawable.logo3).into(imageView8);
+        Picasso.get().load("https://s8.uupload.ir/files/parenting-parents_7r0.jpg").placeholder(R.drawable.logo3).into(imageView8);
 
         ImageView imageView9 = (ImageView) findViewById(R.id.miv9);
         Picasso.get().load("https://s8.uupload.ir/files/360_f_666470913_rnumwfo72pdcddirj87klatwznvqcdof_jy4o.jpg").placeholder(R.drawable.logo3).into(imageView9);
