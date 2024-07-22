@@ -1,4 +1,4 @@
-package com.android.mylibrary;
+package com.android.mylibrary.Stories;
 
 
 import android.graphics.drawable.AnimationDrawable;
@@ -13,6 +13,8 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
 
+import com.android.mylibrary.R;
+import com.android.mylibrary.TextSize;
 import com.squareup.picasso.Picasso;
 import com.transitionseverywhere.Fade;
 import com.transitionseverywhere.Transition;
@@ -20,7 +22,7 @@ import com.transitionseverywhere.TransitionManager;
 
 import java.util.Random;
 
-public class Sto2_activity extends AppCompatActivity {
+public class Sto8_activity extends AppCompatActivity {
 
     private TextSize settingsManager;
 
@@ -30,9 +32,8 @@ public class Sto2_activity extends AppCompatActivity {
         setContentView(R.layout.activity_story);
 
         //Set text
-        ((TextView) findViewById(R.id.tv1)).setText(getString(R.string.stories_tsto2));
-        ((TextView) findViewById(R.id.t1)).setText(getString(R.string.sto2_t1));
-        ((TextView) findViewById(R.id.t2)).setText(getString(R.string.sto2_t2));
+        ((TextView) findViewById(R.id.tv1)).setText(getString(R.string.stories_tsto8));
+        ((TextView) findViewById(R.id.t1)).setText(getString(R.string.sto8_t1));
 
         //Change text size
         settingsManager = new TextSize(this);
@@ -75,8 +76,8 @@ public class Sto2_activity extends AppCompatActivity {
                 TransitionManager.beginDelayedTransition(r, transition);
                 t0.setVisibility(View.VISIBLE);
                 t1.setVisibility(View.VISIBLE);
-                t2.setVisibility(View.VISIBLE);
-                t3.setVisibility(View.VISIBLE);
+                t2.setVisibility(View.GONE);
+                t3.setVisibility(View.GONE);
                 t4.setVisibility(View.GONE);
                 t5.setVisibility(View.GONE);
                 t6.setVisibility(View.GONE);
@@ -141,10 +142,7 @@ public class Sto2_activity extends AppCompatActivity {
         }
 
         ImageView imageView1 = (ImageView) findViewById(R.id.imv1);
-        Picasso.get().load("https://s8.uupload.ir/files/ed2b1b0ad5e44bd58d05de6a8558b19e_djlo.jpg").placeholder(R.drawable.progress_animation).error(R.drawable.error).into(imageView1);
-
-        ImageView imageView2 = (ImageView) findViewById(R.id.im1);
-        Picasso.get().load("https://s8.uupload.ir/files/apartments-on-fire-migrated_nhrm.jpg").placeholder(R.drawable.progress_animation).error(R.drawable.error).into(imageView2);
+        Picasso.get().load("https://s8.uupload.ir/files/parenting-parents_7r0.jpg").error(R.drawable.error).into(imageView1);
 
     }
 }

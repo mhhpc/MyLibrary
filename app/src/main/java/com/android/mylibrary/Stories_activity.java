@@ -17,6 +17,14 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.android.mylibrary.Stories.Sto1_activity;
+import com.android.mylibrary.Stories.Sto2_activity;
+import com.android.mylibrary.Stories.Sto3_activity;
+import com.android.mylibrary.Stories.Sto4_activity;
+import com.android.mylibrary.Stories.Sto5_activity;
+import com.android.mylibrary.Stories.Sto6_activity;
+import com.android.mylibrary.Stories.Sto7_activity;
+import com.android.mylibrary.Stories.Sto8_activity;
 import com.google.android.material.appbar.CollapsingToolbarLayout;
 import com.squareup.picasso.Picasso;
 import com.transitionseverywhere.Slide;

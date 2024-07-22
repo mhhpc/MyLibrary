@@ -1,4 +1,4 @@
-package com.android.mylibrary;
+package com.android.mylibrary.Stories;
 
 
 import android.graphics.drawable.AnimationDrawable;
@@ -13,6 +13,8 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
 
+import com.android.mylibrary.R;
+import com.android.mylibrary.TextSize;
 import com.squareup.picasso.Picasso;
 import com.transitionseverywhere.Fade;
 import com.transitionseverywhere.Transition;
@@ -20,7 +22,7 @@ import com.transitionseverywhere.TransitionManager;
 
 import java.util.Random;
 
-public class Sto8_activity extends AppCompatActivity {
+public class Sto3_activity extends AppCompatActivity {
 
     private TextSize settingsManager;
 
@@ -30,8 +32,8 @@ public class Sto8_activity extends AppCompatActivity {
         setContentView(R.layout.activity_story);
 
         //Set text
-        ((TextView) findViewById(R.id.tv1)).setText(getString(R.string.stories_tsto8));
-        ((TextView) findViewById(R.id.t1)).setText(getString(R.string.sto8_t1));
+        ((TextView) findViewById(R.id.tv1)).setText(getString(R.string.stories_tsto3));
+        ((TextView) findViewById(R.id.t1)).setText(getString(R.string.sto3_t1));
 
         //Change text size
         settingsManager = new TextSize(this);
@@ -140,7 +142,7 @@ public class Sto8_activity extends AppCompatActivity {
         }
 
         ImageView imageView1 = (ImageView) findViewById(R.id.imv1);
-        Picasso.get().load("https://s8.uupload.ir/files/parenting-parents_7r0.jpg").placeholder(R.drawable.progress_animation).error(R.drawable.error).into(imageView1);
+        Picasso.get().load("https://s8.uupload.ir/files/choopan_5ssq.jpg").error(R.drawable.error).into(imageView1);
 
     }
 }

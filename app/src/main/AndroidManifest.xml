@@ -16,28 +16,28 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
-            android:name=".Sto8_activity"
+            android:name=".Stories.Sto8_activity"
             android:exported="false" />
         <activity
-            android:name=".Sto7_activity"
+            android:name=".Stories.Sto7_activity"
             android:exported="false" />
         <activity
-            android:name=".Sto6_activity"
+            android:name=".Stories.Sto6_activity"
             android:exported="false" />
         <activity
-            android:name=".Sto5_activity"
+            android:name=".Stories.Sto5_activity"
             android:exported="false" />
         <activity
-            android:name=".Sto4_activity"
+            android:name=".Stories.Sto4_activity"
             android:exported="false" />
         <activity
-            android:name=".Sto3_activity"
+            android:name=".Stories.Sto3_activity"
             android:exported="false" />
         <activity
-            android:name=".Sto2_activity"
+            android:name=".Stories.Sto2_activity"
             android:exported="false" />
         <activity
-            android:name=".Sto1_activity"
+            android:name=".Stories.Sto1_activity"
             android:exported="false" />
         <activity
             android:name=".Stories_activity"

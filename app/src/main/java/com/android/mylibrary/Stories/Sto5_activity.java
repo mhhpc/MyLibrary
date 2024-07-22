@@ -1,4 +1,4 @@
-package com.android.mylibrary;
+package com.android.mylibrary.Stories;
 
 
 import android.graphics.drawable.AnimationDrawable;
@@ -13,6 +13,8 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
 
+import com.android.mylibrary.R;
+import com.android.mylibrary.TextSize;
 import com.squareup.picasso.Picasso;
 import com.transitionseverywhere.Fade;
 import com.transitionseverywhere.Transition;
@@ -140,7 +142,7 @@ public class Sto5_activity extends AppCompatActivity {
         }
 
         ImageView imageView1 = (ImageView) findViewById(R.id.imv1);
-        Picasso.get().load("https://s8.uupload.ir/files/f_-bus-invece-di-treni-bxyc_6ya4.jpg").placeholder(R.drawable.progress_animation).error(R.drawable.error).into(imageView1);
+        Picasso.get().load("https://s8.uupload.ir/files/f_-bus-invece-di-treni-bxyc_6ya4.jpg").error(R.drawable.error).into(imageView1);
 
     }
 }
