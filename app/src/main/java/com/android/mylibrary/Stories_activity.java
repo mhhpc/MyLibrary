@@ -266,105 +266,105 @@ public class Stories_activity extends AppCompatActivity {
         Picasso.get().load("https://s8.uupload.ir/files/parenting-parents_7r0.jpg").placeholder(R.drawable.logo3).into(imageView8);
 
         ImageView imageView9 = (ImageView) findViewById(R.id.miv9);
-        Picasso.get().load("https://s8.uupload.ir/files/360_f_666470913_rnumwfo72pdcddirj87klatwznvqcdof_jy4o.jpg").placeholder(R.drawable.logo3).into(imageView9);
+        Picasso.get().load("https://s8.uupload.ir/files/3002466_brs6.jpg").placeholder(R.drawable.logo3).into(imageView9);
 
         ImageView imageView10 = (ImageView) findViewById(R.id.miv10);
-        Picasso.get().load("https://s8.uupload.ir/files/360_f_666470913_rnumwfo72pdcddirj87klatwznvqcdof_jy4o.jpg").placeholder(R.drawable.logo3).into(imageView10);
+        Picasso.get().load("https://s8.uupload.ir/files/kvkrovbjr_qq4w.jpg").placeholder(R.drawable.logo3).into(imageView10);
 
         ImageView imageView11 = (ImageView) findViewById(R.id.miv11);
-        Picasso.get().load("https://s8.uupload.ir/files/360_f_688508974_o73n5n95kfabmllpq3kmqci5grlqkvnj_3oqo.jpg").placeholder(R.drawable.logo3).into(imageView11);
+        Picasso.get().load("https://s8.uupload.ir/files/15637826_4phi.jpg").placeholder(R.drawable.logo3).into(imageView11);
 
         ImageView imageView12 = (ImageView) findViewById(R.id.miv12);
-        Picasso.get().load("https://s8.uupload.ir/files/ed2b1b0ad5e44bd58d05de6a8558b19e_djlo.jpg").placeholder(R.drawable.logo3).into(imageView12);
+        Picasso.get().load("https://s8.uupload.ir/files/jakav.com-ax-photo-tabiat-nature-tasavir-iran-ranginkaman_o1u6.jpg").placeholder(R.drawable.logo3).into(imageView12);
 
         ImageView imageView13 = (ImageView) findViewById(R.id.miv13);
-        Picasso.get().load("https://s8.uupload.ir/files/choopan_5ssq.jpg").placeholder(R.drawable.logo3).into(imageView13);
+        Picasso.get().load("https://s8.uupload.ir/files/cart1020560www.tiktarh.com__vrx9.jpg").placeholder(R.drawable.logo3).into(imageView13);
 
         ImageView imageView14 = (ImageView) findViewById(R.id.miv14);
-        Picasso.get().load("https://s8.uupload.ir/files/most-expensive-homes-042616-hero1_v0hj.jpg").placeholder(R.drawable.logo3).into(imageView14);
+        Picasso.get().load("https://s8.uupload.ir/files/roya_in9.jpg").placeholder(R.drawable.logo3).into(imageView14);
 
         ImageView imageView15 = (ImageView) findViewById(R.id.miv15);
-        Picasso.get().load("https://s8.uupload.ir/files/f_-bus-invece-di-treni-bxyc_6ya4.jpg").placeholder(R.drawable.logo3).into(imageView15);
+        Picasso.get().load("https://s8.uupload.ir/files/169770965_5q6n.jpg").placeholder(R.drawable.logo3).into(imageView15);
 
         ImageView imageView16 = (ImageView) findViewById(R.id.miv16);
-        Picasso.get().load("https://s8.uupload.ir/files/jackal-symbolism-and-meaning-04a4efbd_3df4.jpg").placeholder(R.drawable.logo3).into(imageView16);
+        Picasso.get().load("https://s8.uupload.ir/files/gwl-chrg-jdw_0crf.jpg").placeholder(R.drawable.logo3).into(imageView16);
 
         ImageView imageView17 = (ImageView) findViewById(R.id.miv17);
-        Picasso.get().load("https://s8.uupload.ir/files/alfred-bernhard-nobel-portrait-emil-osterman-foundation-1915_tkim.jpg").placeholder(R.drawable.logo3).into(imageView17);
+        Picasso.get().load("https://s8.uupload.ir/files/ydz8pjeigxim_z5bx.jpg").placeholder(R.drawable.logo3).into(imageView17);
 
         ImageView imageView18 = (ImageView) findViewById(R.id.miv18);
-        Picasso.get().load("https://s8.uupload.ir/files/parenting-parents_7r0.jpg").placeholder(R.drawable.logo3).into(imageView18);
+        Picasso.get().load("https://s8.uupload.ir/files/1-6_w7vh.jpg").placeholder(R.drawable.logo3).into(imageView18);
 
         ImageView imageView19 = (ImageView) findViewById(R.id.miv19);
-        Picasso.get().load("https://s8.uupload.ir/files/360_f_666470913_rnumwfo72pdcddirj87klatwznvqcdof_jy4o.jpg").placeholder(R.drawable.logo3).into(imageView19);
+        Picasso.get().load("https://s8.uupload.ir/files/502018121_univ_lsr_lg_21l.jpg").placeholder(R.drawable.logo3).into(imageView19);
 
         ImageView imageView20 = (ImageView) findViewById(R.id.miv20);
-        Picasso.get().load("https://s8.uupload.ir/files/360_f_666470913_rnumwfo72pdcddirj87klatwznvqcdof_jy4o.jpg").placeholder(R.drawable.logo3).into(imageView20);
+        Picasso.get().load("https://s8.uupload.ir/files/hioggoug_chf5.jpg").placeholder(R.drawable.logo3).into(imageView20);
 
         ImageView imageView21 = (ImageView) findViewById(R.id.miv21);
-        Picasso.get().load("https://s8.uupload.ir/files/360_f_688508974_o73n5n95kfabmllpq3kmqci5grlqkvnj_3oqo.jpg").placeholder(R.drawable.logo3).into(imageView21);
+        Picasso.get().load("https://s8.uupload.ir/files/master_groph_14-4_14_oe8k.jpg").placeholder(R.drawable.logo3).into(imageView21);
 
         ImageView imageView22 = (ImageView) findViewById(R.id.miv22);
-        Picasso.get().load("https://s8.uupload.ir/files/ed2b1b0ad5e44bd58d05de6a8558b19e_djlo.jpg").placeholder(R.drawable.logo3).into(imageView22);
+        Picasso.get().load("https://s8.uupload.ir/files/shoe-tools9_4nr7.jpg").placeholder(R.drawable.logo3).into(imageView22);
 
         ImageView imageView23 = (ImageView) findViewById(R.id.miv23);
-        Picasso.get().load("https://s8.uupload.ir/files/choopan_5ssq.jpg").placeholder(R.drawable.logo3).into(imageView23);
+        Picasso.get().load("https://s8.uupload.ir/files/shtrvl1000219www.tiktarh.com__sani.jpg").placeholder(R.drawable.logo3).into(imageView23);
 
         ImageView imageView24 = (ImageView) findViewById(R.id.miv24);
-        Picasso.get().load("https://s8.uupload.ir/files/most-expensive-homes-042616-hero1_v0hj.jpg").placeholder(R.drawable.logo3).into(imageView24);
+        Picasso.get().load("https://s8.uupload.ir/files/large_400ad4e1-d127-4b35-9304-5901b5a4a2de_amg1.jpg").placeholder(R.drawable.logo3).into(imageView24);
 
         ImageView imageView25 = (ImageView) findViewById(R.id.miv25);
-        Picasso.get().load("https://s8.uupload.ir/files/f_-bus-invece-di-treni-bxyc_6ya4.jpg").placeholder(R.drawable.logo3).into(imageView25);
+        Picasso.get().load("https://s8.uupload.ir/files/circus-vancouver-1024x694_75u.jpg").placeholder(R.drawable.logo3).into(imageView25);
 
         ImageView imageView26 = (ImageView) findViewById(R.id.miv26);
-        Picasso.get().load("https://s8.uupload.ir/files/jackal-symbolism-and-meaning-04a4efbd_3df4.jpg").placeholder(R.drawable.logo3).into(imageView26);
+        Picasso.get().load("https://s8.uupload.ir/files/amazing_r031.jpg").placeholder(R.drawable.logo3).into(imageView26);
 
         ImageView imageView27 = (ImageView) findViewById(R.id.miv27);
-        Picasso.get().load("https://s8.uupload.ir/files/alfred-bernhard-nobel-portrait-emil-osterman-foundation-1915_tkim.jpg").placeholder(R.drawable.logo3).into(imageView27);
+        Picasso.get().load("https://s8.uupload.ir/files/3037_8ke.jpg").placeholder(R.drawable.logo3).into(imageView27);
 
         ImageView imageView28 = (ImageView) findViewById(R.id.miv28);
-        Picasso.get().load("https://s8.uupload.ir/files/parenting-parents_7r0.jpg").placeholder(R.drawable.logo3).into(imageView28);
+        Picasso.get().load("https://s8.uupload.ir/files/butterflies_mzdr.jpg").placeholder(R.drawable.logo3).into(imageView28);
 
         ImageView imageView29 = (ImageView) findViewById(R.id.miv29);
-        Picasso.get().load("https://s8.uupload.ir/files/360_f_666470913_rnumwfo72pdcddirj87klatwznvqcdof_jy4o.jpg").placeholder(R.drawable.logo3).into(imageView29);
+        Picasso.get().load("https://s8.uupload.ir/files/5f0d7f5a19134_merh.jpg").placeholder(R.drawable.logo3).into(imageView29);
 
         ImageView imageView30 = (ImageView) findViewById(R.id.miv30);
-        Picasso.get().load("https://s8.uupload.ir/files/360_f_666470913_rnumwfo72pdcddirj87klatwznvqcdof_jy4o.jpg").placeholder(R.drawable.logo3).into(imageView30);
+        Picasso.get().load("https://s8.uupload.ir/files/demonios_s1000rr-group-riding_4eq4.jpg").placeholder(R.drawable.logo3).into(imageView30);
 
         ImageView imageView31 = (ImageView) findViewById(R.id.miv31);
-        Picasso.get().load("https://s8.uupload.ir/files/360_f_688508974_o73n5n95kfabmllpq3kmqci5grlqkvnj_3oqo.jpg").placeholder(R.drawable.logo3).into(imageView31);
+        Picasso.get().load("https://s8.uupload.ir/files/animals-634-infinitychap.com-0700696742_pthl.jpg").placeholder(R.drawable.logo3).into(imageView31);
 
         ImageView imageView32 = (ImageView) findViewById(R.id.miv32);
-        Picasso.get().load("https://s8.uupload.ir/files/ed2b1b0ad5e44bd58d05de6a8558b19e_djlo.jpg").placeholder(R.drawable.logo3).into(imageView32);
+        Picasso.get().load("https://s8.uupload.ir/files/whitepelican_edit_shadowlift_muhg.jpg").placeholder(R.drawable.logo3).into(imageView32);
 
         ImageView imageView33 = (ImageView) findViewById(R.id.miv33);
-        Picasso.get().load("https://s8.uupload.ir/files/choopan_5ssq.jpg").placeholder(R.drawable.logo3).into(imageView33);
+        Picasso.get().load("https://s8.uupload.ir/files/nwjkowi43bke_2e6u.jpg").placeholder(R.drawable.logo3).into(imageView33);
 
         ImageView imageView34 = (ImageView) findViewById(R.id.miv34);
-        Picasso.get().load("https://s8.uupload.ir/files/most-expensive-homes-042616-hero1_v0hj.jpg").placeholder(R.drawable.logo3).into(imageView34);
+        Picasso.get().load("https://s8.uupload.ir/files/74d1e572-2120-43f1-894b-c15b2af6e64f_kemw.jpg").placeholder(R.drawable.logo3).into(imageView34);
 
         ImageView imageView35 = (ImageView) findViewById(R.id.miv35);
-        Picasso.get().load("https://s8.uupload.ir/files/f_-bus-invece-di-treni-bxyc_6ya4.jpg").placeholder(R.drawable.logo3).into(imageView35);
+        Picasso.get().load("https://s8.uupload.ir/files/coffee-menu4_tkm2.jpg").placeholder(R.drawable.logo3).into(imageView35);
 
         ImageView imageView36 = (ImageView) findViewById(R.id.miv36);
-        Picasso.get().load("https://s8.uupload.ir/files/jackal-symbolism-and-meaning-04a4efbd_3df4.jpg").placeholder(R.drawable.logo3).into(imageView36);
+        Picasso.get().load("https://s8.uupload.ir/files/sbberbhr_a90.jpg").placeholder(R.drawable.logo3).into(imageView36);
 
         ImageView imageView37 = (ImageView) findViewById(R.id.miv37);
-        Picasso.get().load("https://s8.uupload.ir/files/alfred-bernhard-nobel-portrait-emil-osterman-foundation-1915_tkim.jpg").placeholder(R.drawable.logo3).into(imageView37);
+        Picasso.get().load("https://s8.uupload.ir/files/3595221_rqaq.jpg").placeholder(R.drawable.logo3).into(imageView37);
 
         ImageView imageView38 = (ImageView) findViewById(R.id.miv38);
-        Picasso.get().load("https://s8.uupload.ir/files/parenting-parents_7r0.jpg").placeholder(R.drawable.logo3).into(imageView38);
+        Picasso.get().load("https://s8.uupload.ir/files/70986950980_f2hw.jpg").placeholder(R.drawable.logo3).into(imageView38);
 
         ImageView imageView39 = (ImageView) findViewById(R.id.miv39);
-        Picasso.get().load("https://s8.uupload.ir/files/360_f_666470913_rnumwfo72pdcddirj87klatwznvqcdof_jy4o.jpg").placeholder(R.drawable.logo3).into(imageView39);
+        Picasso.get().load("https://s8.uupload.ir/files/8994d7607baec2d7d96239d0cb82f74f_on7j.jpg").placeholder(R.drawable.logo3).into(imageView39);
 
         ImageView imageView40 = (ImageView) findViewById(R.id.miv40);
-        Picasso.get().load("https://s8.uupload.ir/files/360_f_666470913_rnumwfo72pdcddirj87klatwznvqcdof_jy4o.jpg").placeholder(R.drawable.logo3).into(imageView40);
+        Picasso.get().load("https://s8.uupload.ir/files/15550031_t28x.jpg").placeholder(R.drawable.logo3).into(imageView40);
 
         ImageView imageView41 = (ImageView) findViewById(R.id.miv41);
-        Picasso.get().load("https://s8.uupload.ir/files/360_f_666470913_rnumwfo72pdcddirj87klatwznvqcdof_jy4o.jpg").placeholder(R.drawable.logo3).into(imageView41);
+        Picasso.get().load("https://s8.uupload.ir/files/rhrh_h52y.jpg").placeholder(R.drawable.logo3).into(imageView41);
 
         ImageView imageView42 = (ImageView) findViewById(R.id.miv42);
-        Picasso.get().load("https://s8.uupload.ir/files/360_f_666470913_rnumwfo72pdcddirj87klatwznvqcdof_jy4o.jpg").placeholder(R.drawable.logo3).into(imageView42);
+        Picasso.get().load("https://s8.uupload.ir/files/08-01_g6y7.jpg").placeholder(R.drawable.logo3).into(imageView42);
     }
 }
