@@ -16,6 +16,108 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
+            android:name=".Stories.Sto42_activity"
+            android:exported="false" />
+        <activity
+            android:name=".Stories.Sto41_activity"
+            android:exported="false" />
+        <activity
+            android:name=".Stories.Sto40_activity"
+            android:exported="false" />
+        <activity
+            android:name=".Stories.Sto39_activity"
+            android:exported="false" />
+        <activity
+            android:name=".Stories.Sto38_activity"
+            android:exported="false" />
+        <activity
+            android:name=".Stories.Sto37_activity"
+            android:exported="false" />
+        <activity
+            android:name=".Stories.Sto36_activity"
+            android:exported="false" />
+        <activity
+            android:name=".Stories.Sto35_activity"
+            android:exported="false" />
+        <activity
+            android:name=".Stories.Sto34_activity"
+            android:exported="false" />
+        <activity
+            android:name=".Stories.Sto33_activity"
+            android:exported="false" />
+        <activity
+            android:name=".Stories.Sto32_activity"
+            android:exported="false" />
+        <activity
+            android:name=".Stories.Sto31_activity"
+            android:exported="false" />
+        <activity
+            android:name=".Stories.Sto30_activity"
+            android:exported="false" />
+        <activity
+            android:name=".Stories.Sto29_activity"
+            android:exported="false" />
+        <activity
+            android:name=".Stories.Sto28_activity"
+            android:exported="false" />
+        <activity
+            android:name=".Stories.Sto27_activity"
+            android:exported="false" />
+        <activity
+            android:name=".Stories.Sto26_activity"
+            android:exported="false" />
+        <activity
+            android:name=".Stories.Sto25_activity"
+            android:exported="false" />
+        <activity
+            android:name=".Stories.Sto24_activity"
+            android:exported="false" />
+        <activity
+            android:name=".Stories.Sto23_activity"
+            android:exported="false" />
+        <activity
+            android:name=".Stories.Sto22_activity"
+            android:exported="false" />
+        <activity
+            android:name=".Stories.Sto21_activity"
+            android:exported="false" />
+        <activity
+            android:name=".Stories.Sto20_activity"
+            android:exported="false" />
+        <activity
+            android:name=".Stories.Sto19_activity"
+            android:exported="false" />
+        <activity
+            android:name=".Stories.Sto18_activity"
+            android:exported="false" />
+        <activity
+            android:name=".Stories.Sto17_activity"
+            android:exported="false" />
+        <activity
+            android:name=".Stories.Sto16_activity"
+            android:exported="false" />
+        <activity
+            android:name=".Stories.Sto15_activity"
+            android:exported="false" />
+        <activity
+            android:name=".Stories.Sto14_activity"
+            android:exported="false" />
+        <activity
+            android:name=".Stories.Sto13_activity"
+            android:exported="false" />
+        <activity
+            android:name=".Stories.Sto12_activity"
+            android:exported="false" />
+        <activity
+            android:name=".Stories.Sto11_activity"
+            android:exported="false" />
+        <activity
+            android:name=".Stories.Sto10_activity"
+            android:exported="false" />
+        <activity
+            android:name=".Stories.Sto9_activity"
+            android:exported="false" />
+        <activity
             android:name=".Stories.Sto8_activity"
             android:exported="false" />
         <activity

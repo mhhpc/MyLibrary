@@ -17,14 +17,48 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.android.mylibrary.Stories.Sto10_activity;
+import com.android.mylibrary.Stories.Sto11_activity;
+import com.android.mylibrary.Stories.Sto12_activity;
+import com.android.mylibrary.Stories.Sto13_activity;
+import com.android.mylibrary.Stories.Sto14_activity;
+import com.android.mylibrary.Stories.Sto15_activity;
+import com.android.mylibrary.Stories.Sto16_activity;
+import com.android.mylibrary.Stories.Sto17_activity;
+import com.android.mylibrary.Stories.Sto18_activity;
+import com.android.mylibrary.Stories.Sto19_activity;
 import com.android.mylibrary.Stories.Sto1_activity;
+import com.android.mylibrary.Stories.Sto20_activity;
+import com.android.mylibrary.Stories.Sto21_activity;
+import com.android.mylibrary.Stories.Sto22_activity;
+import com.android.mylibrary.Stories.Sto23_activity;
+import com.android.mylibrary.Stories.Sto24_activity;
+import com.android.mylibrary.Stories.Sto25_activity;
+import com.android.mylibrary.Stories.Sto26_activity;
+import com.android.mylibrary.Stories.Sto27_activity;
+import com.android.mylibrary.Stories.Sto28_activity;
+import com.android.mylibrary.Stories.Sto29_activity;
 import com.android.mylibrary.Stories.Sto2_activity;
+import com.android.mylibrary.Stories.Sto30_activity;
+import com.android.mylibrary.Stories.Sto31_activity;
+import com.android.mylibrary.Stories.Sto32_activity;
+import com.android.mylibrary.Stories.Sto33_activity;
+import com.android.mylibrary.Stories.Sto34_activity;
+import com.android.mylibrary.Stories.Sto35_activity;
+import com.android.mylibrary.Stories.Sto36_activity;
+import com.android.mylibrary.Stories.Sto37_activity;
+import com.android.mylibrary.Stories.Sto38_activity;
+import com.android.mylibrary.Stories.Sto39_activity;
 import com.android.mylibrary.Stories.Sto3_activity;
+import com.android.mylibrary.Stories.Sto40_activity;
+import com.android.mylibrary.Stories.Sto41_activity;
+import com.android.mylibrary.Stories.Sto42_activity;
 import com.android.mylibrary.Stories.Sto4_activity;
 import com.android.mylibrary.Stories.Sto5_activity;
 import com.android.mylibrary.Stories.Sto6_activity;
 import com.android.mylibrary.Stories.Sto7_activity;
 import com.android.mylibrary.Stories.Sto8_activity;
+import com.android.mylibrary.Stories.Sto9_activity;
 import com.google.android.material.appbar.CollapsingToolbarLayout;
 import com.squareup.picasso.Picasso;
 import com.transitionseverywhere.Slide;
@@ -233,6 +267,448 @@ public class Stories_activity extends AppCompatActivity {
                 ActivityOptionsCompat options = ActivityOptionsCompat.makeSceneTransitionAnimation(Stories_activity.this, pair1, pair2);
 
                 Intent intent = new Intent(Stories_activity.this, Sto8_activity.class);
+                startActivity(intent, options.toBundle());
+            }
+        });
+
+        @SuppressLint("CutPasteId") CardView cv9 = (CardView) findViewById(R.id.mcv9);
+        cv9.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Pair<View, String> pair1 = Pair.create(findViewById(R.id.miv9), "trans1");
+                Pair<View, String> pair2 = Pair.create(findViewById(R.id.tv9), "trans2");
+
+                ActivityOptionsCompat options = ActivityOptionsCompat.makeSceneTransitionAnimation(Stories_activity.this, pair1, pair2);
+
+                Intent intent = new Intent(Stories_activity.this, Sto9_activity.class);
+                startActivity(intent, options.toBundle());
+            }
+        });
+
+        @SuppressLint("CutPasteId") CardView cv10 = (CardView) findViewById(R.id.mcv10);
+        cv10.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Pair<View, String> pair1 = Pair.create(findViewById(R.id.miv10), "trans1");
+                Pair<View, String> pair2 = Pair.create(findViewById(R.id.tv10), "trans2");
+
+                ActivityOptionsCompat options = ActivityOptionsCompat.makeSceneTransitionAnimation(Stories_activity.this, pair1, pair2);
+
+                Intent intent = new Intent(Stories_activity.this, Sto10_activity.class);
+                startActivity(intent, options.toBundle());
+            }
+        });
+
+        @SuppressLint("CutPasteId") CardView cv11 = (CardView) findViewById(R.id.mcv11);
+        cv11.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Pair<View, String> pair1 = Pair.create(findViewById(R.id.miv11), "trans1");
+                Pair<View, String> pair2 = Pair.create(findViewById(R.id.tv11), "trans2");
+
+                ActivityOptionsCompat options = ActivityOptionsCompat.makeSceneTransitionAnimation(Stories_activity.this, pair1, pair2);
+
+                Intent intent = new Intent(Stories_activity.this, Sto11_activity.class);
+                startActivity(intent, options.toBundle());
+            }
+        });
+
+        @SuppressLint("CutPasteId") CardView cv12 = (CardView) findViewById(R.id.mcv12);
+        cv12.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Pair<View, String> pair1 = Pair.create(findViewById(R.id.miv12), "trans1");
+                Pair<View, String> pair2 = Pair.create(findViewById(R.id.tv12), "trans2");
+
+                ActivityOptionsCompat options = ActivityOptionsCompat.makeSceneTransitionAnimation(Stories_activity.this, pair1, pair2);
+
+                Intent intent = new Intent(Stories_activity.this, Sto12_activity.class);
+                startActivity(intent, options.toBundle());
+            }
+        });
+
+        @SuppressLint("CutPasteId") CardView cv13 = (CardView) findViewById(R.id.mcv13);
+        cv13.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Pair<View, String> pair1 = Pair.create(findViewById(R.id.miv13), "trans1");
+                Pair<View, String> pair2 = Pair.create(findViewById(R.id.tv13), "trans2");
+
+                ActivityOptionsCompat options = ActivityOptionsCompat.makeSceneTransitionAnimation(Stories_activity.this, pair1, pair2);
+
+                Intent intent = new Intent(Stories_activity.this, Sto13_activity.class);
+                startActivity(intent, options.toBundle());
+            }
+        });
+
+        @SuppressLint("CutPasteId") CardView cv14 = (CardView) findViewById(R.id.mcv14);
+        cv14.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Pair<View, String> pair1 = Pair.create(findViewById(R.id.miv14), "trans1");
+                Pair<View, String> pair2 = Pair.create(findViewById(R.id.tv14), "trans2");
+
+                ActivityOptionsCompat options = ActivityOptionsCompat.makeSceneTransitionAnimation(Stories_activity.this, pair1, pair2);
+
+                Intent intent = new Intent(Stories_activity.this, Sto14_activity.class);
+                startActivity(intent, options.toBundle());
+            }
+        });
+
+        @SuppressLint("CutPasteId") CardView cv15 = (CardView) findViewById(R.id.mcv15);
+        cv15.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Pair<View, String> pair1 = Pair.create(findViewById(R.id.miv15), "trans1");
+                Pair<View, String> pair2 = Pair.create(findViewById(R.id.tv15), "trans2");
+
+                ActivityOptionsCompat options = ActivityOptionsCompat.makeSceneTransitionAnimation(Stories_activity.this, pair1, pair2);
+
+                Intent intent = new Intent(Stories_activity.this, Sto15_activity.class);
+                startActivity(intent, options.toBundle());
+            }
+        });
+
+        @SuppressLint("CutPasteId") CardView cv16 = (CardView) findViewById(R.id.mcv16);
+        cv16.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Pair<View, String> pair1 = Pair.create(findViewById(R.id.miv16), "trans1");
+                Pair<View, String> pair2 = Pair.create(findViewById(R.id.tv16), "trans2");
+
+                ActivityOptionsCompat options = ActivityOptionsCompat.makeSceneTransitionAnimation(Stories_activity.this, pair1, pair2);
+
+                Intent intent = new Intent(Stories_activity.this, Sto16_activity.class);
+                startActivity(intent, options.toBundle());
+            }
+        });
+
+        @SuppressLint("CutPasteId") CardView cv17 = (CardView) findViewById(R.id.mcv17);
+        cv17.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Pair<View, String> pair1 = Pair.create(findViewById(R.id.miv17), "trans1");
+                Pair<View, String> pair2 = Pair.create(findViewById(R.id.tv17), "trans2");
+
+                ActivityOptionsCompat options = ActivityOptionsCompat.makeSceneTransitionAnimation(Stories_activity.this, pair1, pair2);
+
+                Intent intent = new Intent(Stories_activity.this, Sto17_activity.class);
+                startActivity(intent, options.toBundle());
+            }
+        });
+
+        @SuppressLint("CutPasteId") CardView cv18 = (CardView) findViewById(R.id.mcv18);
+        cv18.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Pair<View, String> pair1 = Pair.create(findViewById(R.id.miv18), "trans1");
+                Pair<View, String> pair2 = Pair.create(findViewById(R.id.tv18), "trans2");
+
+                ActivityOptionsCompat options = ActivityOptionsCompat.makeSceneTransitionAnimation(Stories_activity.this, pair1, pair2);
+
+                Intent intent = new Intent(Stories_activity.this, Sto18_activity.class);
+                startActivity(intent, options.toBundle());
+            }
+        });
+
+        @SuppressLint("CutPasteId") CardView cv19 = (CardView) findViewById(R.id.mcv19);
+        cv19.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Pair<View, String> pair1 = Pair.create(findViewById(R.id.miv19), "trans1");
+                Pair<View, String> pair2 = Pair.create(findViewById(R.id.tv19), "trans2");
+
+                ActivityOptionsCompat options = ActivityOptionsCompat.makeSceneTransitionAnimation(Stories_activity.this, pair1, pair2);
+
+                Intent intent = new Intent(Stories_activity.this, Sto19_activity.class);
+                startActivity(intent, options.toBundle());
+            }
+        });
+
+        @SuppressLint("CutPasteId") CardView cv20 = (CardView) findViewById(R.id.mcv20);
+        cv20.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Pair<View, String> pair1 = Pair.create(findViewById(R.id.miv20), "trans1");
+                Pair<View, String> pair2 = Pair.create(findViewById(R.id.tv20), "trans2");
+
+                ActivityOptionsCompat options = ActivityOptionsCompat.makeSceneTransitionAnimation(Stories_activity.this, pair1, pair2);
+
+                Intent intent = new Intent(Stories_activity.this, Sto20_activity.class);
+                startActivity(intent, options.toBundle());
+            }
+        });
+
+        @SuppressLint("CutPasteId") CardView cv21 = (CardView) findViewById(R.id.mcv21);
+        cv21.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Pair<View, String> pair1 = Pair.create(findViewById(R.id.miv21), "trans1");
+                Pair<View, String> pair2 = Pair.create(findViewById(R.id.tv21), "trans2");
+
+                ActivityOptionsCompat options = ActivityOptionsCompat.makeSceneTransitionAnimation(Stories_activity.this, pair1, pair2);
+
+                Intent intent = new Intent(Stories_activity.this, Sto21_activity.class);
+                startActivity(intent, options.toBundle());
+            }
+        });
+
+        @SuppressLint("CutPasteId") CardView cv22 = (CardView) findViewById(R.id.mcv22);
+        cv22.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Pair<View, String> pair1 = Pair.create(findViewById(R.id.miv22), "trans1");
+                Pair<View, String> pair2 = Pair.create(findViewById(R.id.tv22), "trans2");
+
+                ActivityOptionsCompat options = ActivityOptionsCompat.makeSceneTransitionAnimation(Stories_activity.this, pair1, pair2);
+
+                Intent intent = new Intent(Stories_activity.this, Sto22_activity.class);
+                startActivity(intent, options.toBundle());
+            }
+        });
+
+        @SuppressLint("CutPasteId") CardView cv23 = (CardView) findViewById(R.id.mcv23);
+        cv23.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Pair<View, String> pair1 = Pair.create(findViewById(R.id.miv23), "trans1");
+                Pair<View, String> pair2 = Pair.create(findViewById(R.id.tv23), "trans2");
+
+                ActivityOptionsCompat options = ActivityOptionsCompat.makeSceneTransitionAnimation(Stories_activity.this, pair1, pair2);
+
+                Intent intent = new Intent(Stories_activity.this, Sto23_activity.class);
+                startActivity(intent, options.toBundle());
+            }
+        });
+
+        @SuppressLint("CutPasteId") CardView cv24 = (CardView) findViewById(R.id.mcv24);
+        cv24.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Pair<View, String> pair1 = Pair.create(findViewById(R.id.miv24), "trans1");
+                Pair<View, String> pair2 = Pair.create(findViewById(R.id.tv24), "trans2");
+
+                ActivityOptionsCompat options = ActivityOptionsCompat.makeSceneTransitionAnimation(Stories_activity.this, pair1, pair2);
+
+                Intent intent = new Intent(Stories_activity.this, Sto24_activity.class);
+                startActivity(intent, options.toBundle());
+            }
+        });
+
+        @SuppressLint("CutPasteId") CardView cv25 = (CardView) findViewById(R.id.mcv25);
+        cv25.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Pair<View, String> pair1 = Pair.create(findViewById(R.id.miv25), "trans1");
+                Pair<View, String> pair2 = Pair.create(findViewById(R.id.tv25), "trans2");
+
+                ActivityOptionsCompat options = ActivityOptionsCompat.makeSceneTransitionAnimation(Stories_activity.this, pair1, pair2);
+
+                Intent intent = new Intent(Stories_activity.this, Sto25_activity.class);
+                startActivity(intent, options.toBundle());
+            }
+        });
+
+        @SuppressLint("CutPasteId") CardView cv26 = (CardView) findViewById(R.id.mcv26);
+        cv26.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Pair<View, String> pair1 = Pair.create(findViewById(R.id.miv26), "trans1");
+                Pair<View, String> pair2 = Pair.create(findViewById(R.id.tv26), "trans2");
+
+                ActivityOptionsCompat options = ActivityOptionsCompat.makeSceneTransitionAnimation(Stories_activity.this, pair1, pair2);
+
+                Intent intent = new Intent(Stories_activity.this, Sto26_activity.class);
+                startActivity(intent, options.toBundle());
+            }
+        });
+
+        @SuppressLint("CutPasteId") CardView cv27 = (CardView) findViewById(R.id.mcv27);
+        cv27.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Pair<View, String> pair1 = Pair.create(findViewById(R.id.miv27), "trans1");
+                Pair<View, String> pair2 = Pair.create(findViewById(R.id.tv27), "trans2");
+
+                ActivityOptionsCompat options = ActivityOptionsCompat.makeSceneTransitionAnimation(Stories_activity.this, pair1, pair2);
+
+                Intent intent = new Intent(Stories_activity.this, Sto27_activity.class);
+                startActivity(intent, options.toBundle());
+            }
+        });
+
+        @SuppressLint("CutPasteId") CardView cv28 = (CardView) findViewById(R.id.mcv28);
+        cv28.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Pair<View, String> pair1 = Pair.create(findViewById(R.id.miv28), "trans1");
+                Pair<View, String> pair2 = Pair.create(findViewById(R.id.tv28), "trans2");
+
+                ActivityOptionsCompat options = ActivityOptionsCompat.makeSceneTransitionAnimation(Stories_activity.this, pair1, pair2);
+
+                Intent intent = new Intent(Stories_activity.this, Sto28_activity.class);
+                startActivity(intent, options.toBundle());
+            }
+        });
+
+        @SuppressLint("CutPasteId") CardView cv29 = (CardView) findViewById(R.id.mcv29);
+        cv29.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Pair<View, String> pair1 = Pair.create(findViewById(R.id.miv29), "trans1");
+                Pair<View, String> pair2 = Pair.create(findViewById(R.id.tv29), "trans2");
+
+                ActivityOptionsCompat options = ActivityOptionsCompat.makeSceneTransitionAnimation(Stories_activity.this, pair1, pair2);
+
+                Intent intent = new Intent(Stories_activity.this, Sto29_activity.class);
+                startActivity(intent, options.toBundle());
+            }
+        });
+
+        @SuppressLint("CutPasteId") CardView cv30 = (CardView) findViewById(R.id.mcv30);
+        cv30.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Pair<View, String> pair1 = Pair.create(findViewById(R.id.miv30), "trans1");
+                Pair<View, String> pair2 = Pair.create(findViewById(R.id.tv30), "trans2");
+
+                ActivityOptionsCompat options = ActivityOptionsCompat.makeSceneTransitionAnimation(Stories_activity.this, pair1, pair2);
+
+                Intent intent = new Intent(Stories_activity.this, Sto30_activity.class);
+                startActivity(intent, options.toBundle());
+            }
+        });
+
+        @SuppressLint("CutPasteId") CardView cv31 = (CardView) findViewById(R.id.mcv31);
+        cv31.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Pair<View, String> pair1 = Pair.create(findViewById(R.id.miv31), "trans1");
+                Pair<View, String> pair2 = Pair.create(findViewById(R.id.tv31), "trans2");
+
+                ActivityOptionsCompat options = ActivityOptionsCompat.makeSceneTransitionAnimation(Stories_activity.this, pair1, pair2);
+
+                Intent intent = new Intent(Stories_activity.this, Sto31_activity.class);
+                startActivity(intent, options.toBundle());
+            }
+        });
+
+        @SuppressLint("CutPasteId") CardView cv32 = (CardView) findViewById(R.id.mcv32);
+        cv32.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Pair<View, String> pair1 = Pair.create(findViewById(R.id.miv32), "trans1");
+                Pair<View, String> pair2 = Pair.create(findViewById(R.id.tv32), "trans2");
+
+                ActivityOptionsCompat options = ActivityOptionsCompat.makeSceneTransitionAnimation(Stories_activity.this, pair1, pair2);
+
+                Intent intent = new Intent(Stories_activity.this, Sto32_activity.class);
+                startActivity(intent, options.toBundle());
+            }
+        });
+
+        @SuppressLint("CutPasteId") CardView cv33 = (CardView) findViewById(R.id.mcv33);
+        cv33.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Pair<View, String> pair1 = Pair.create(findViewById(R.id.miv33), "trans1");
+                Pair<View, String> pair2 = Pair.create(findViewById(R.id.tv33), "trans2");
+
+                ActivityOptionsCompat options = ActivityOptionsCompat.makeSceneTransitionAnimation(Stories_activity.this, pair1, pair2);
+
+                Intent intent = new Intent(Stories_activity.this, Sto33_activity.class);
+                startActivity(intent, options.toBundle());
+            }
+        });
+
+        @SuppressLint("CutPasteId") CardView cv34 = (CardView) findViewById(R.id.mcv34);
+        cv34.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Pair<View, String> pair1 = Pair.create(findViewById(R.id.miv34), "trans1");
+                Pair<View, String> pair2 = Pair.create(findViewById(R.id.tv34), "trans2");
+
+                ActivityOptionsCompat options = ActivityOptionsCompat.makeSceneTransitionAnimation(Stories_activity.this, pair1, pair2);
+
+                Intent intent = new Intent(Stories_activity.this, Sto34_activity.class);
+                startActivity(intent, options.toBundle());
+            }
+        });
+
+        @SuppressLint("CutPasteId") CardView cv35 = (CardView) findViewById(R.id.mcv35);
+        cv35.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Pair<View, String> pair1 = Pair.create(findViewById(R.id.miv35), "trans1");
+                Pair<View, String> pair2 = Pair.create(findViewById(R.id.tv35), "trans2");
+
+                ActivityOptionsCompat options = ActivityOptionsCompat.makeSceneTransitionAnimation(Stories_activity.this, pair1, pair2);
+
+                Intent intent = new Intent(Stories_activity.this, Sto35_activity.class);
+                startActivity(intent, options.toBundle());
+            }
+        });
+
+        @SuppressLint("CutPasteId") CardView cv36 = (CardView) findViewById(R.id.mcv36);
+        cv36.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Pair<View, String> pair1 = Pair.create(findViewById(R.id.miv36), "trans1");
+                Pair<View, String> pair2 = Pair.create(findViewById(R.id.tv36), "trans2");
+
+                ActivityOptionsCompat options = ActivityOptionsCompat.makeSceneTransitionAnimation(Stories_activity.this, pair1, pair2);
+
+                Intent intent = new Intent(Stories_activity.this, Sto36_activity.class);
+                startActivity(intent, options.toBundle());
+            }
+        });
+
+        @SuppressLint("CutPasteId") CardView cv37 = (CardView) findViewById(R.id.mcv37);
+        cv37.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Pair<View, String> pair1 = Pair.create(findViewById(R.id.miv37), "trans1");
+                Pair<View, String> pair2 = Pair.create(findViewById(R.id.tv37), "trans2");
+
+                ActivityOptionsCompat options = ActivityOptionsCompat.makeSceneTransitionAnimation(Stories_activity.this, pair1, pair2);
+
+                Intent intent = new Intent(Stories_activity.this, Sto37_activity.class);
+                startActivity(intent, options.toBundle());
+            }
+        });
+
+        @SuppressLint("CutPasteId") CardView cv38 = (CardView) findViewById(R.id.mcv38);
+        cv38.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Pair<View, String> pair1 = Pair.create(findViewById(R.id.miv38), "trans1");
+                Pair<View, String> pair2 = Pair.create(findViewById(R.id.tv38), "trans2");
+
+                ActivityOptionsCompat options = ActivityOptionsCompat.makeSceneTransitionAnimation(Stories_activity.this, pair1, pair2);
+
+                Intent intent = new Intent(Stories_activity.this, Sto38_activity.class);
+                startActivity(intent, options.toBundle());
+            }
+        });
+
+        @SuppressLint("CutPasteId") CardView cv39 = (CardView) findViewById(R.id.mcv39);
+        cv39.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Pair<View, String> pair1 = Pair.create(findViewById(R.id.miv39), "trans1");
+                Pair<View, String> pair2 = Pair.create(findViewById(R.id.tv39), "trans2");
+
+                ActivityOptionsCompat options = ActivityOptionsCompat.makeSceneTransitionAnimation(Stories_activity.this, pair1, pair2);
+
+                Intent intent = new Intent(Stories_activity.this, Sto39_activity.class);
+                startActivity(intent, options.toBundle());
+            }
+        });
+
+        @SuppressLint("CutPasteId") CardView cv40 = (CardView) findViewById(R.id.mcv40);
+        cv40.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Pair<View, String> pair1 = Pair.create(findViewById(R.id.miv40), "trans1");
+                Pair<View, String> pair2 = Pair.create(findViewById(R.id.tv40), "trans2");
+
+                ActivityOptionsCompat options = ActivityOptionsCompat.makeSceneTransitionAnimation(Stories_activity.this, pair1, pair2);
+
+                Intent intent = new Intent(Stories_activity.this, Sto40_activity.class);
+                startActivity(intent, options.toBundle());
+            }
+        });
+
+        @SuppressLint("CutPasteId") CardView cv41 = (CardView) findViewById(R.id.mcv41);
+        cv41.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Pair<View, String> pair1 = Pair.create(findViewById(R.id.miv41), "trans1");
+                Pair<View, String> pair2 = Pair.create(findViewById(R.id.tv41), "trans2");
+
+                ActivityOptionsCompat options = ActivityOptionsCompat.makeSceneTransitionAnimation(Stories_activity.this, pair1, pair2);
+
+                Intent intent = new Intent(Stories_activity.this, Sto41_activity.class);
+                startActivity(intent, options.toBundle());
+            }
+        });
+
+        @SuppressLint("CutPasteId") CardView cv42 = (CardView) findViewById(R.id.mcv42);
+        cv42.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Pair<View, String> pair1 = Pair.create(findViewById(R.id.miv42), "trans1");
+                Pair<View, String> pair2 = Pair.create(findViewById(R.id.tv42), "trans2");
+
+                ActivityOptionsCompat options = ActivityOptionsCompat.makeSceneTransitionAnimation(Stories_activity.this, pair1, pair2);
+
+                Intent intent = new Intent(Stories_activity.this, Sto42_activity.class);
                 startActivity(intent, options.toBundle());
             }
         });
