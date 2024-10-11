@@ -122,6 +122,15 @@ public class Stories_activity extends AppCompatActivity {
         final LinearLayout t19 = findViewById(R.id.menu19);
         final LinearLayout t20 = findViewById(R.id.menu20);
         final LinearLayout t21 = findViewById(R.id.menu21);
+        final LinearLayout t22 = findViewById(R.id.menu22);
+        final LinearLayout t23 = findViewById(R.id.menu23);
+        final LinearLayout t24 = findViewById(R.id.menu24);
+        final LinearLayout t25 = findViewById(R.id.menu25);
+        final LinearLayout t26 = findViewById(R.id.menu26);
+        final LinearLayout t27 = findViewById(R.id.menu27);
+        final LinearLayout t28 = findViewById(R.id.menu28);
+        final LinearLayout t29 = findViewById(R.id.menu29);
+        final LinearLayout t30 = findViewById(R.id.menu30);
 
 
         new Handler().postDelayed(new Runnable() {
@@ -151,6 +160,15 @@ public class Stories_activity extends AppCompatActivity {
                 t19.setVisibility(View.VISIBLE);
                 t20.setVisibility(View.VISIBLE);
                 t21.setVisibility(View.VISIBLE);
+                t22.setVisibility(View.VISIBLE);
+                t23.setVisibility(View.VISIBLE);
+                t24.setVisibility(View.VISIBLE);
+                t25.setVisibility(View.VISIBLE);
+                t26.setVisibility(View.VISIBLE);
+                t27.setVisibility(View.VISIBLE);
+                t28.setVisibility(View.VISIBLE);
+                t29.setVisibility(View.VISIBLE);
+                t30.setVisibility(View.VISIBLE);
             }
         }, 200);
 

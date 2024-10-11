@@ -16,6 +16,60 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
+            android:name=".Stories.Sto60_activity"
+            android:exported="false" />
+        <activity
+            android:name=".Stories.Sto59_activity"
+            android:exported="false" />
+        <activity
+            android:name=".Stories.Sto58_activity"
+            android:exported="false" />
+        <activity
+            android:name=".Stories.Sto57_activity"
+            android:exported="false" />
+        <activity
+            android:name=".Stories.Sto56_activity"
+            android:exported="false" />
+        <activity
+            android:name=".Stories.Sto55_activity"
+            android:exported="false" />
+        <activity
+            android:name=".Stories.Sto54_activity"
+            android:exported="false" />
+        <activity
+            android:name=".Stories.Sto53_activity"
+            android:exported="false" />
+        <activity
+            android:name=".Stories.Sto52_activity"
+            android:exported="false" />
+        <activity
+            android:name=".Stories.Sto51_activity"
+            android:exported="false" />
+        <activity
+            android:name=".Stories.Sto50_activity"
+            android:exported="false" />
+        <activity
+            android:name=".Stories.Sto49_activity"
+            android:exported="false" />
+        <activity
+            android:name=".Stories.Sto48_activity"
+            android:exported="false" />
+        <activity
+            android:name=".Stories.Sto47_activity"
+            android:exported="false" />
+        <activity
+            android:name=".Stories.Sto46_activity"
+            android:exported="false" />
+        <activity
+            android:name=".Stories.Sto45_activity"
+            android:exported="false" />
+        <activity
+            android:name=".Stories.Sto44_activity"
+            android:exported="false" />
+        <activity
+            android:name=".Stories.Sto43_activity"
+            android:exported="false" />
+        <activity
             android:name=".Stories.Sto42_activity"
             android:exported="false" />
         <activity
