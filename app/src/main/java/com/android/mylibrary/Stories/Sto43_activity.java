@@ -142,7 +142,7 @@ public class Sto43_activity extends AppCompatActivity {
         }
 
         ImageView imageView1 = (ImageView) findViewById(R.id.imv1);
-        Picasso.get().load("https://s8.uupload.ir/files/360_f_688508974_o73n5n95kfabmllpq3kmqci5grlqkvnj_3oqo.jpg").error(R.drawable.error).into(imageView1);
+        Picasso.get().load("https://s8.uupload.ir/files/077206e2-2a2a-4a21-88f1-079c9135fc6e-1200x900_2dpo.jpg").error(R.drawable.error).into(imageView1);
 
     }
 }

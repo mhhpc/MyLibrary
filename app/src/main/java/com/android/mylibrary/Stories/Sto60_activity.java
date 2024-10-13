@@ -142,7 +142,7 @@ public class Sto60_activity extends AppCompatActivity {
         }
 
         ImageView imageView1 = (ImageView) findViewById(R.id.imv1);
-        Picasso.get().load("https://s8.uupload.ir/files/360_f_688508974_o73n5n95kfabmllpq3kmqci5grlqkvnj_3oqo.jpg").error(R.drawable.error).into(imageView1);
+        Picasso.get().load("https://s8.uupload.ir/files/how-to-clean-a-jetted-tub-5073242-06-f99bf9e94cb64923b37a990899c9a400_aowa.jpg").error(R.drawable.error).into(imageView1);
 
     }
 }

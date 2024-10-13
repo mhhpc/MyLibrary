@@ -53,8 +53,26 @@ import com.android.mylibrary.Stories.Sto3_activity;
 import com.android.mylibrary.Stories.Sto40_activity;
 import com.android.mylibrary.Stories.Sto41_activity;
 import com.android.mylibrary.Stories.Sto42_activity;
+import com.android.mylibrary.Stories.Sto43_activity;
+import com.android.mylibrary.Stories.Sto44_activity;
+import com.android.mylibrary.Stories.Sto45_activity;
+import com.android.mylibrary.Stories.Sto46_activity;
+import com.android.mylibrary.Stories.Sto47_activity;
+import com.android.mylibrary.Stories.Sto48_activity;
+import com.android.mylibrary.Stories.Sto49_activity;
 import com.android.mylibrary.Stories.Sto4_activity;
+import com.android.mylibrary.Stories.Sto50_activity;
+import com.android.mylibrary.Stories.Sto51_activity;
+import com.android.mylibrary.Stories.Sto52_activity;
+import com.android.mylibrary.Stories.Sto53_activity;
+import com.android.mylibrary.Stories.Sto54_activity;
+import com.android.mylibrary.Stories.Sto55_activity;
+import com.android.mylibrary.Stories.Sto56_activity;
+import com.android.mylibrary.Stories.Sto57_activity;
+import com.android.mylibrary.Stories.Sto58_activity;
+import com.android.mylibrary.Stories.Sto59_activity;
 import com.android.mylibrary.Stories.Sto5_activity;
+import com.android.mylibrary.Stories.Sto60_activity;
 import com.android.mylibrary.Stories.Sto6_activity;
 import com.android.mylibrary.Stories.Sto7_activity;
 import com.android.mylibrary.Stories.Sto8_activity;
@@ -731,6 +749,240 @@ public class Stories_activity extends AppCompatActivity {
             }
         });
 
+        @SuppressLint("CutPasteId") CardView cv43 = (CardView) findViewById(R.id.mcv43);
+        cv43.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Pair<View, String> pair1 = Pair.create(findViewById(R.id.miv43), "trans1");
+                Pair<View, String> pair2 = Pair.create(findViewById(R.id.tv43), "trans2");
+
+                ActivityOptionsCompat options = ActivityOptionsCompat.makeSceneTransitionAnimation(Stories_activity.this, pair1, pair2);
+
+                Intent intent = new Intent(Stories_activity.this, Sto43_activity.class);
+                startActivity(intent, options.toBundle());
+            }
+        });
+
+        @SuppressLint("CutPasteId") CardView cv44 = (CardView) findViewById(R.id.mcv44);
+        cv44.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Pair<View, String> pair1 = Pair.create(findViewById(R.id.miv44), "trans1");
+                Pair<View, String> pair2 = Pair.create(findViewById(R.id.tv44), "trans2");
+
+                ActivityOptionsCompat options = ActivityOptionsCompat.makeSceneTransitionAnimation(Stories_activity.this, pair1, pair2);
+
+                Intent intent = new Intent(Stories_activity.this, Sto44_activity.class);
+                startActivity(intent, options.toBundle());
+            }
+        });
+
+        @SuppressLint("CutPasteId") CardView cv45 = (CardView) findViewById(R.id.mcv45);
+        cv45.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Pair<View, String> pair1 = Pair.create(findViewById(R.id.miv45), "trans1");
+                Pair<View, String> pair2 = Pair.create(findViewById(R.id.tv45), "trans2");
+
+                ActivityOptionsCompat options = ActivityOptionsCompat.makeSceneTransitionAnimation(Stories_activity.this, pair1, pair2);
+
+                Intent intent = new Intent(Stories_activity.this, Sto45_activity.class);
+                startActivity(intent, options.toBundle());
+            }
+        });
+
+        @SuppressLint("CutPasteId") CardView cv46 = (CardView) findViewById(R.id.mcv46);
+        cv46.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Pair<View, String> pair1 = Pair.create(findViewById(R.id.miv46), "trans1");
+                Pair<View, String> pair2 = Pair.create(findViewById(R.id.tv46), "trans2");
+
+                ActivityOptionsCompat options = ActivityOptionsCompat.makeSceneTransitionAnimation(Stories_activity.this, pair1, pair2);
+
+                Intent intent = new Intent(Stories_activity.this, Sto46_activity.class);
+                startActivity(intent, options.toBundle());
+            }
+        });
+
+        @SuppressLint("CutPasteId") CardView cv47 = (CardView) findViewById(R.id.mcv47);
+        cv47.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Pair<View, String> pair1 = Pair.create(findViewById(R.id.miv47), "trans1");
+                Pair<View, String> pair2 = Pair.create(findViewById(R.id.tv47), "trans2");
+
+                ActivityOptionsCompat options = ActivityOptionsCompat.makeSceneTransitionAnimation(Stories_activity.this, pair1, pair2);
+
+                Intent intent = new Intent(Stories_activity.this, Sto47_activity.class);
+                startActivity(intent, options.toBundle());
+            }
+        });
+
+        @SuppressLint("CutPasteId") CardView cv48 = (CardView) findViewById(R.id.mcv48);
+        cv48.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Pair<View, String> pair1 = Pair.create(findViewById(R.id.miv48), "trans1");
+                Pair<View, String> pair2 = Pair.create(findViewById(R.id.tv48), "trans2");
+
+                ActivityOptionsCompat options = ActivityOptionsCompat.makeSceneTransitionAnimation(Stories_activity.this, pair1, pair2);
+
+                Intent intent = new Intent(Stories_activity.this, Sto48_activity.class);
+                startActivity(intent, options.toBundle());
+            }
+        });
+
+        @SuppressLint("CutPasteId") CardView cv49 = (CardView) findViewById(R.id.mcv49);
+        cv49.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Pair<View, String> pair1 = Pair.create(findViewById(R.id.miv49), "trans1");
+                Pair<View, String> pair2 = Pair.create(findViewById(R.id.tv49), "trans2");
+
+                ActivityOptionsCompat options = ActivityOptionsCompat.makeSceneTransitionAnimation(Stories_activity.this, pair1, pair2);
+
+                Intent intent = new Intent(Stories_activity.this, Sto49_activity.class);
+                startActivity(intent, options.toBundle());
+            }
+        });
+
+        @SuppressLint("CutPasteId") CardView cv50 = (CardView) findViewById(R.id.mcv50);
+        cv50.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Pair<View, String> pair1 = Pair.create(findViewById(R.id.miv50), "trans1");
+                Pair<View, String> pair2 = Pair.create(findViewById(R.id.tv50), "trans2");
+
+                ActivityOptionsCompat options = ActivityOptionsCompat.makeSceneTransitionAnimation(Stories_activity.this, pair1, pair2);
+
+                Intent intent = new Intent(Stories_activity.this, Sto50_activity.class);
+                startActivity(intent, options.toBundle());
+            }
+        });
+
+        @SuppressLint("CutPasteId") CardView cv51 = (CardView) findViewById(R.id.mcv51);
+        cv51.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Pair<View, String> pair1 = Pair.create(findViewById(R.id.miv51), "trans1");
+                Pair<View, String> pair2 = Pair.create(findViewById(R.id.tv51), "trans2");
+
+                ActivityOptionsCompat options = ActivityOptionsCompat.makeSceneTransitionAnimation(Stories_activity.this, pair1, pair2);
+
+                Intent intent = new Intent(Stories_activity.this, Sto51_activity.class);
+                startActivity(intent, options.toBundle());
+            }
+        });
+
+        @SuppressLint("CutPasteId") CardView cv52 = (CardView) findViewById(R.id.mcv52);
+        cv52.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Pair<View, String> pair1 = Pair.create(findViewById(R.id.miv52), "trans1");
+                Pair<View, String> pair2 = Pair.create(findViewById(R.id.tv52), "trans2");
+
+                ActivityOptionsCompat options = ActivityOptionsCompat.makeSceneTransitionAnimation(Stories_activity.this, pair1, pair2);
+
+                Intent intent = new Intent(Stories_activity.this, Sto52_activity.class);
+                startActivity(intent, options.toBundle());
+            }
+        });
+
+        @SuppressLint("CutPasteId") CardView cv53 = (CardView) findViewById(R.id.mcv53);
+        cv53.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Pair<View, String> pair1 = Pair.create(findViewById(R.id.miv53), "trans1");
+                Pair<View, String> pair2 = Pair.create(findViewById(R.id.tv53), "trans2");
+
+                ActivityOptionsCompat options = ActivityOptionsCompat.makeSceneTransitionAnimation(Stories_activity.this, pair1, pair2);
+
+                Intent intent = new Intent(Stories_activity.this, Sto53_activity.class);
+                startActivity(intent, options.toBundle());
+            }
+        });
+
+        @SuppressLint("CutPasteId") CardView cv54 = (CardView) findViewById(R.id.mcv54);
+        cv54.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Pair<View, String> pair1 = Pair.create(findViewById(R.id.miv54), "trans1");
+                Pair<View, String> pair2 = Pair.create(findViewById(R.id.tv54), "trans2");
+
+                ActivityOptionsCompat options = ActivityOptionsCompat.makeSceneTransitionAnimation(Stories_activity.this, pair1, pair2);
+
+                Intent intent = new Intent(Stories_activity.this, Sto54_activity.class);
+                startActivity(intent, options.toBundle());
+            }
+        });
+
+        @SuppressLint("CutPasteId") CardView cv55 = (CardView) findViewById(R.id.mcv55);
+        cv55.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Pair<View, String> pair1 = Pair.create(findViewById(R.id.miv55), "trans1");
+                Pair<View, String> pair2 = Pair.create(findViewById(R.id.tv55), "trans2");
+
+                ActivityOptionsCompat options = ActivityOptionsCompat.makeSceneTransitionAnimation(Stories_activity.this, pair1, pair2);
+
+                Intent intent = new Intent(Stories_activity.this, Sto55_activity.class);
+                startActivity(intent, options.toBundle());
+            }
+        });
+
+        @SuppressLint("CutPasteId") CardView cv56 = (CardView) findViewById(R.id.mcv56);
+        cv56.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Pair<View, String> pair1 = Pair.create(findViewById(R.id.miv56), "trans1");
+                Pair<View, String> pair2 = Pair.create(findViewById(R.id.tv56), "trans2");
+
+                ActivityOptionsCompat options = ActivityOptionsCompat.makeSceneTransitionAnimation(Stories_activity.this, pair1, pair2);
+
+                Intent intent = new Intent(Stories_activity.this, Sto56_activity.class);
+                startActivity(intent, options.toBundle());
+            }
+        });
+
+        @SuppressLint("CutPasteId") CardView cv57 = (CardView) findViewById(R.id.mcv57);
+        cv57.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Pair<View, String> pair1 = Pair.create(findViewById(R.id.miv57), "trans1");
+                Pair<View, String> pair2 = Pair.create(findViewById(R.id.tv57), "trans2");
+
+                ActivityOptionsCompat options = ActivityOptionsCompat.makeSceneTransitionAnimation(Stories_activity.this, pair1, pair2);
+
+                Intent intent = new Intent(Stories_activity.this, Sto57_activity.class);
+                startActivity(intent, options.toBundle());
+            }
+        });
+
+        @SuppressLint("CutPasteId") CardView cv58 = (CardView) findViewById(R.id.mcv58);
+        cv58.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Pair<View, String> pair1 = Pair.create(findViewById(R.id.miv58), "trans1");
+                Pair<View, String> pair2 = Pair.create(findViewById(R.id.tv58), "trans2");
+
+                ActivityOptionsCompat options = ActivityOptionsCompat.makeSceneTransitionAnimation(Stories_activity.this, pair1, pair2);
+
+                Intent intent = new Intent(Stories_activity.this, Sto58_activity.class);
+                startActivity(intent, options.toBundle());
+            }
+        });
+
+        @SuppressLint("CutPasteId") CardView cv59 = (CardView) findViewById(R.id.mcv59);
+        cv59.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Pair<View, String> pair1 = Pair.create(findViewById(R.id.miv59), "trans1");
+                Pair<View, String> pair2 = Pair.create(findViewById(R.id.tv59), "trans2");
+
+                ActivityOptionsCompat options = ActivityOptionsCompat.makeSceneTransitionAnimation(Stories_activity.this, pair1, pair2);
+
+                Intent intent = new Intent(Stories_activity.this, Sto59_activity.class);
+                startActivity(intent, options.toBundle());
+            }
+        });
+
+        @SuppressLint("CutPasteId") CardView cv60 = (CardView) findViewById(R.id.mcv60);
+        cv60.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Pair<View, String> pair1 = Pair.create(findViewById(R.id.miv60), "trans1");
+                Pair<View, String> pair2 = Pair.create(findViewById(R.id.tv60), "trans2");
+
+                ActivityOptionsCompat options = ActivityOptionsCompat.makeSceneTransitionAnimation(Stories_activity.this, pair1, pair2);
+
+                Intent intent = new Intent(Stories_activity.this, Sto60_activity.class);
+                startActivity(intent, options.toBundle());
+            }
+        });
+
         //Image links
         ImageView imageView0 = (ImageView) findViewById(R.id.image);
         Picasso.get().load("https://s8.uupload.ir/files/open-book_auok.png").placeholder(R.drawable.logo2).into(imageView0);
@@ -860,5 +1112,59 @@ public class Stories_activity extends AppCompatActivity {
 
         ImageView imageView42 = (ImageView) findViewById(R.id.miv42);
         Picasso.get().load("https://s8.uupload.ir/files/08-01_g6y7.jpg").placeholder(R.drawable.logo3).into(imageView42);
+
+        ImageView imageView43 = (ImageView) findViewById(R.id.miv43);
+        Picasso.get().load("https://s8.uupload.ir/files/077206e2-2a2a-4a21-88f1-079c9135fc6e-1200x900_2dpo.jpg").placeholder(R.drawable.logo3).into(imageView43);
+
+        ImageView imageView44 = (ImageView) findViewById(R.id.miv44);
+        Picasso.get().load("https://s8.uupload.ir/files/water-well_lfl.jpg").placeholder(R.drawable.logo3).into(imageView44);
+
+        ImageView imageView45 = (ImageView) findViewById(R.id.miv45);
+        Picasso.get().load("https://s8.uupload.ir/files/d557ec67f01a4fe49dd9f84fadbe9d72_dlcc.jpg").placeholder(R.drawable.logo3).into(imageView45);
+
+        ImageView imageView46 = (ImageView) findViewById(R.id.miv46);
+        Picasso.get().load("https://s8.uupload.ir/files/8d3452e5e0956f2a97768276a3f09a4e-e1705487782263_wdy6.jpg").placeholder(R.drawable.logo3).into(imageView46);
+
+        ImageView imageView47 = (ImageView) findViewById(R.id.miv47);
+        Picasso.get().load("https://s8.uupload.ir/files/89405_405_vppq.jpg").placeholder(R.drawable.logo3).into(imageView47);
+
+        ImageView imageView48 = (ImageView) findViewById(R.id.miv48);
+        Picasso.get().load("https://s8.uupload.ir/files/table-with-phone_pp14.jpg").placeholder(R.drawable.logo3).into(imageView48);
+
+        ImageView imageView49 = (ImageView) findViewById(R.id.miv49);
+        Picasso.get().load("https://s8.uupload.ir/files/jasper-boer-1fuu0dratom-unsplash-scaled-1_eh5d.jpg").placeholder(R.drawable.logo3).into(imageView49);
+
+        ImageView imageView50 = (ImageView) findViewById(R.id.miv50);
+        Picasso.get().load("https://s8.uupload.ir/files/marry-a-poor-man_g605.jpg").placeholder(R.drawable.logo3).into(imageView50);
+
+        ImageView imageView51 = (ImageView) findViewById(R.id.miv51);
+        Picasso.get().load("https://s8.uupload.ir/files/51951042270_78ea1e8590_h.7_egok.jpg").placeholder(R.drawable.logo3).into(imageView51);
+
+        ImageView imageView52 = (ImageView) findViewById(R.id.miv52);
+        Picasso.get().load("https://s8.uupload.ir/files/2-lane-arch-bridge-with-pedestrian-walkway-1000_xfia.jpg").placeholder(R.drawable.logo3).into(imageView52);
+
+        ImageView imageView53 = (ImageView) findViewById(R.id.miv53);
+        Picasso.get().load("https://s8.uupload.ir/files/0_h7y9.jpg").placeholder(R.drawable.logo3).into(imageView53);
+
+        ImageView imageView54 = (ImageView) findViewById(R.id.miv54);
+        Picasso.get().load("https://s8.uupload.ir/files/campfire_soa7.jpg").placeholder(R.drawable.logo3).into(imageView54);
+
+        ImageView imageView55 = (ImageView) findViewById(R.id.miv55);
+        Picasso.get().load("https://s8.uupload.ir/files/1-1_vjl3.jpg").placeholder(R.drawable.logo3).into(imageView55);
+
+        ImageView imageView56 = (ImageView) findViewById(R.id.miv56);
+        Picasso.get().load("https://s8.uupload.ir/files/jdjfhfge_7acd.jpg").placeholder(R.drawable.logo3).into(imageView56);
+
+        ImageView imageView57 = (ImageView) findViewById(R.id.miv57);
+        Picasso.get().load("https://s8.uupload.ir/files/1713183520401085_0ph4.jpg").placeholder(R.drawable.logo3).into(imageView57);
+
+        ImageView imageView58 = (ImageView) findViewById(R.id.miv58);
+        Picasso.get().load("https://s8.uupload.ir/files/61654b3b-99a_dc3.jpg").placeholder(R.drawable.logo3).into(imageView58);
+
+        ImageView imageView59 = (ImageView) findViewById(R.id.miv59);
+        Picasso.get().load("https://s8.uupload.ir/files/4707376_1uba.jpg").placeholder(R.drawable.logo3).into(imageView59);
+
+        ImageView imageView60 = (ImageView) findViewById(R.id.miv60);
+        Picasso.get().load("https://s8.uupload.ir/files/how-to-clean-a-jetted-tub-5073242-06-f99bf9e94cb64923b37a990899c9a400_aowa.jpg").placeholder(R.drawable.logo3).into(imageView60);
     }
 }
