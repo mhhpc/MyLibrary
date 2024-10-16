@@ -13,6 +13,7 @@ import android.os.Handler;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -32,9 +33,9 @@ public class About_activity extends AppCompatActivity {
 
         //Change text size
         settingsManager = new TextSize(this);
+        TextView Textview0 = findViewById(R.id.t0);
         TextView Textview1 = findViewById(R.id.t1);
         TextView Textview2 = findViewById(R.id.t2);
-        TextView Textview3 = findViewById(R.id.t3);
         TextView Textview4 = findViewById(R.id.t4);
         TextView Textview5 = findViewById(R.id.t5);
         TextView Textview6 = findViewById(R.id.t6);
@@ -42,9 +43,9 @@ public class About_activity extends AppCompatActivity {
         TextView Textview8 = findViewById(R.id.t8);
 
         float textSize = settingsManager.getTextSize();
+        Textview0.setTextSize(textSize);
         Textview1.setTextSize(textSize);
         Textview2.setTextSize(textSize);
-        Textview3.setTextSize(textSize);
         Textview4.setTextSize(textSize);
         Textview5.setTextSize(textSize);
         Textview6.setTextSize(textSize);
@@ -100,7 +101,7 @@ public class About_activity extends AppCompatActivity {
 
         //button onclick
 
-        @SuppressLint("CutPasteId") ImageView b2 = (ImageView) findViewById(R.id.b2);
+        @SuppressLint("CutPasteId") LinearLayout b2 = (LinearLayout) findViewById(R.id.item1);
         b2.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Intent intentRate = new Intent(Intent.ACTION_VIEW);
@@ -109,30 +110,8 @@ public class About_activity extends AppCompatActivity {
             }
         });
 
-        @SuppressLint("CutPasteId") TextView b200 = (TextView) findViewById(R.id.t2);
-        b200.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                Intent intentRate = new Intent(Intent.ACTION_VIEW);
-                intentRate.setData(Uri.parse("https://cafebazaar.ir/app/com.example.short_stories"));
-                startActivity(intentRate);
-            }
-        });
-
-        @SuppressLint("CutPasteId") ImageView b3 = (ImageView) findViewById(R.id.b3);
+        @SuppressLint("CutPasteId") LinearLayout b3 = (LinearLayout) findViewById(R.id.item2);
         b3.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                Intent intentSend = new Intent();
-                intentSend.setAction(Intent.ACTION_SEND);
-                intentSend.putExtra(Intent.EXTRA_TEXT, "سلام \n به راحتی میتونی اپلیکیشن کتابخانه من رو از لینک زیر دانلود کنی ;) \n https://cafebazaar.ir/app/com.example.short_stories");
-                intentSend.setType("text/plain");
-
-                Intent share = Intent.createChooser(intentSend, null);
-                startActivity(share);
-            }
-        });
-
-        @SuppressLint("CutPasteId") TextView b300 = (TextView) findViewById(R.id.t3);
-        b300.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Intent intentSend = new Intent();
                 intentSend.setAction(Intent.ACTION_SEND);

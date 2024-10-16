@@ -79,7 +79,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         final ViewGroup r = findViewById(R.id.main);
         final LinearLayout t1 = findViewById(R.id.list);
         final LinearLayout t2 = findViewById(R.id.menu1);
-        final LinearLayout t3 = findViewById(R.id.list2);
         final LinearLayout t4 = findViewById(R.id.ll1);
 
         new Handler().postDelayed(new Runnable() {
@@ -90,7 +89,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 TransitionManager.beginDelayedTransition(r, transition);
                 t1.setVisibility(View.VISIBLE);
                 t2.setVisibility(View.VISIBLE);
-                t3.setVisibility(View.VISIBLE);
                 t4.setVisibility(View.VISIBLE);
             }
         }, 200);
@@ -102,31 +100,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         ImageView ImageView2 = (ImageView) findViewById(R.id.miv2);
         Picasso.get().load("https://s8.uupload.ir/files/_33dde004-9358-4709-97b8-41deca4d338e(1)_2sk.jpg").into(ImageView2);
 
-        //text onclick
-        @SuppressLint("CutPasteId") TextView txt1 = (TextView) findViewById(R.id.t1);
+        // onclick
+        @SuppressLint("CutPasteId") LinearLayout txt1 = (LinearLayout) findViewById(R.id.item1);
         txt1.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, Stories_activity.class));
             }
         });
 
-        @SuppressLint("CutPasteId") TextView txt2 = (TextView) findViewById(R.id.t2);
+        @SuppressLint("CutPasteId") LinearLayout txt2 = (LinearLayout) findViewById(R.id.item2);
         txt2.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, Categories_activity.class));
-            }
-        });
-
-        //Image buttons onclick
-        @SuppressLint("CutPasteId") ImageView btn1 = (ImageView) findViewById(R.id.b1);
-        btn1.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, Stories_activity.class));
-            }
-        });
-
-        @SuppressLint("CutPasteId") ImageView btn2 = (ImageView) findViewById(R.id.b2);
-        btn2.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, Categories_activity.class));
             }
