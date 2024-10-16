@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/gradient_list"
     tools:context=".Categories_activity">
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout
@@ -49,15 +48,55 @@
                     android:visibility="invisible"
                     tools:ignore="Orientation">
 
-                    <ImageView
-                        android:id="@+id/pic1"
-                        style="@style/CategoryImageview"
-                        android:layout_weight="1" />
+                    <LinearLayout
+                        android:id="@+id/item1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginHorizontal="15dp"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="10dp">
 
-                    <ImageView
-                        android:id="@+id/pic2"
-                        style="@style/CategoryImageview"
-                        android:layout_weight="1" />
+                        <ImageView
+                            android:id="@+id/pic1"
+                            style="@style/CategoryImageview" />
+
+                        <TextView
+                            android:id="@+id/t1"
+                            style="@style/CategoriesSimpleTextview"
+                            android:layout_marginHorizontal="5dp"
+                            android:layout_marginTop="10dp"
+                            android:text="@string/categories_t1" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/item2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginHorizontal="15dp"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <ImageView
+                            android:id="@+id/pic2"
+                            style="@style/CategoryImageview" />
+
+                        <TextView
+                            android:id="@+id/t2"
+                            style="@style/CategoriesSimpleTextview"
+                            android:layout_marginHorizontal="5dp"
+                            android:layout_marginTop="10dp"
+                            android:text="@string/categories_t2" />
+                    </LinearLayout>
 
                 </LinearLayout>
 
@@ -67,21 +106,58 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@id/list1"
                     android:layout_marginTop="0dp"
-                    android:visibility="invisible">
+                    android:visibility="invisible"
+                    tools:ignore="Orientation">
 
-                    <TextView
-                        android:id="@+id/t1"
-                        style="@style/CategoriesSimpleTextview"
-                        android:layout_marginHorizontal="5dp"
+                    <LinearLayout
+                        android:id="@+id/item3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginHorizontal="15dp"
                         android:layout_weight="1"
-                        android:text="@string/categories_t1" />
+                        android:clickable="true"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="10dp">
 
-                    <TextView
-                        android:id="@+id/t2"
-                        style="@style/CategoriesSimpleTextview"
-                        android:layout_marginHorizontal="5dp"
+                        <ImageView
+                            android:id="@+id/pic3"
+                            style="@style/CategoryImageview" />
+
+                        <TextView
+                            android:id="@+id/t3"
+                            style="@style/CategoriesSimpleTextview"
+                            android:layout_marginHorizontal="5dp"
+                            android:layout_marginTop="10dp"
+                            android:text="@string/categories_t3" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/item4"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginHorizontal="15dp"
                         android:layout_weight="1"
-                        android:text="@string/categories_t2" />
+                        android:clickable="true"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <ImageView
+                            android:id="@+id/pic4"
+                            style="@style/CategoryImageview" />
+
+                        <TextView
+                            android:id="@+id/t4"
+                            style="@style/CategoriesSimpleTextview"
+                            android:layout_marginHorizontal="5dp"
+                            android:layout_marginTop="10dp"
+                            android:text="@string/categories_t4" />
+                    </LinearLayout>
 
                 </LinearLayout>
 
@@ -94,74 +170,30 @@
                     android:visibility="invisible"
                     tools:ignore="Orientation">
 
-                    <ImageView
-                        android:id="@+id/pic3"
-                        style="@style/CategoryImageview"
-                        android:layout_weight="1" />
-
-                    <ImageView
-                        android:id="@+id/pic4"
-                        style="@style/CategoryImageview"
-                        android:layout_weight="1" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:id="@+id/list4"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/list3"
-                    android:layout_marginTop="0dp"
-                    android:visibility="invisible">
-
-                    <TextView
-                        android:id="@+id/t3"
-                        style="@style/CategoriesSimpleTextview"
-                        android:layout_marginHorizontal="5dp"
+                    <LinearLayout
+                        android:id="@+id/item5"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginHorizontal="15dp"
                         android:layout_weight="1"
-                        android:text="@string/categories_t3" />
+                        android:clickable="true"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="10dp">
 
-                    <TextView
-                        android:id="@+id/t4"
-                        style="@style/CategoriesSimpleTextview"
-                        android:layout_marginHorizontal="5dp"
-                        android:layout_weight="1"
-                        android:text="@string/categories_t4" />
+                        <ImageView
+                            android:id="@+id/pic5"
+                            style="@style/CategoryImageview" />
 
-                </LinearLayout>
-
-                <LinearLayout
-                    android:id="@+id/list5"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/list4"
-                    android:layout_marginTop="5dp"
-                    android:gravity="center"
-                    android:visibility="invisible"
-                    tools:ignore="Orientation">
-
-                    <ImageView
-                        android:id="@+id/pic5"
-                        style="@style/CategoryImageview"
-                        android:layout_width="150dp"
-                        android:layout_height="150dp" />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:id="@+id/list6"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/list5"
-                    android:layout_marginTop="-15dp"
-                    android:visibility="invisible">
-
-                    <TextView
-                        android:id="@+id/t5"
-                        style="@style/CategoriesSimpleTextview"
-                        android:layout_marginHorizontal="50dp"
-                        android:layout_marginTop="10dp"
-                        android:layout_weight="1"
-                        android:text="@string/categories_t5" />
+                        <TextView
+                            android:id="@+id/t5"
+                            style="@style/CategoriesSimpleTextview"
+                            android:layout_marginHorizontal="5dp"
+                            android:layout_marginTop="10dp"
+                            android:text="@string/categories_t5" />
+                    </LinearLayout>
 
                 </LinearLayout>
 

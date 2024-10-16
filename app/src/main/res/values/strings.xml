@@ -45,6 +45,9 @@
     <string name="categories_t4">خنده و سرگرمی</string>
     <string name="categories_t5">درس آموز</string>
 
+    //cat_emotional
+    <string name="cat_emotional_title">داستان های عاطفی</string>
+
     //activity_stories
     <string name="stories_title">همه داستان ها</string>
 

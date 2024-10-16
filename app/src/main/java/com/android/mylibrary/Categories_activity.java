@@ -3,6 +3,8 @@ package com.android.mylibrary;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.widget.NestedScrollView;
 
+import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
 import android.os.Handler;
@@ -13,6 +15,11 @@ import android.widget.LinearLayout;
 import android.widget.SeekBar;
 import android.widget.TextView;
 
+import com.android.mylibrary.Categories.Cat_emotional;
+import com.android.mylibrary.Categories.Cat_fun;
+import com.android.mylibrary.Categories.Cat_instructive;
+import com.android.mylibrary.Categories.Cat_religious;
+import com.android.mylibrary.Categories.Cat_sad;
 import com.google.android.material.appbar.CollapsingToolbarLayout;
 import com.squareup.picasso.Picasso;
 import com.transitionseverywhere.Slide;
@@ -48,9 +55,6 @@ public class Categories_activity extends AppCompatActivity {
         final LinearLayout t1 = findViewById(R.id.list1);
         final LinearLayout t2 = findViewById(R.id.list2);
         final LinearLayout t3 = findViewById(R.id.list3);
-        final LinearLayout t4 = findViewById(R.id.list4);
-        final LinearLayout t5 = findViewById(R.id.list5);
-        final LinearLayout t6 = findViewById(R.id.list6);
 
 
         new Handler().postDelayed(new Runnable() {
@@ -62,9 +66,6 @@ public class Categories_activity extends AppCompatActivity {
                 t1.setVisibility(View.VISIBLE);
                 t2.setVisibility(View.VISIBLE);
                 t3.setVisibility(View.VISIBLE);
-                t4.setVisibility(View.VISIBLE);
-                t5.setVisibility(View.VISIBLE);
-                t6.setVisibility(View.VISIBLE);
             }
         }, 200);
 
@@ -80,6 +81,42 @@ public class Categories_activity extends AppCompatActivity {
         animationDrawable2.setEnterFadeDuration(2000);
         animationDrawable2.setExitFadeDuration(4000);
         animationDrawable2.start();
+
+        // onclick
+        @SuppressLint("CutPasteId") LinearLayout ln1 = (LinearLayout) findViewById(R.id.item1);
+        ln1.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                startActivity(new Intent(Categories_activity.this, Cat_emotional.class));
+            }
+        });
+
+        @SuppressLint("CutPasteId") LinearLayout ln2 = (LinearLayout) findViewById(R.id.item2);
+        ln2.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                startActivity(new Intent(Categories_activity.this, Cat_religious.class));
+            }
+        });
+
+        @SuppressLint("CutPasteId") LinearLayout ln3 = (LinearLayout) findViewById(R.id.item3);
+        ln3.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                startActivity(new Intent(Categories_activity.this, Cat_sad.class));
+            }
+        });
+
+        @SuppressLint("CutPasteId") LinearLayout ln4 = (LinearLayout) findViewById(R.id.item4);
+        ln4.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                startActivity(new Intent(Categories_activity.this, Cat_fun.class));
+            }
+        });
+
+        @SuppressLint("CutPasteId") LinearLayout ln5 = (LinearLayout) findViewById(R.id.item5);
+        ln5.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                startActivity(new Intent(Categories_activity.this, Cat_instructive.class));
+            }
+        });
 
         //Image links
         ImageView imageView0 = (ImageView) findViewById(R.id.image);
