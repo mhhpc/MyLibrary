@@ -292,7 +292,7 @@ public class Cat_emotional extends AppCompatActivity {
 
         //Image links
         ImageView imageView0 = (ImageView) findViewById(R.id.image);
-        Picasso.get().load("https://s8.uupload.ir/files/open-book_auok.png").placeholder(R.drawable.logo2).into(imageView0);
+        Picasso.get().load("https://s8.uupload.ir/files/emotional_pu6n.png").placeholder(R.drawable.logo2).into(imageView0);
 
         ImageView imageView1 = (ImageView) findViewById(R.id.miv1);
         Picasso.get().load("https://s8.uupload.ir/files/360_f_688508974_o73n5n95kfabmllpq3kmqci5grlqkvnj_3oqo.jpg").placeholder(R.drawable.logo3).into(imageView1);
