@@ -650,7 +650,7 @@
                         <TextView
                             android:id="@+id/tv30"
                             style="@style/TipsTextView"
-                            android:text="@string/stories_tsto22" />
+                            android:text="@string/stories_tsto30" />
 
                     </androidx.cardview.widget.CardView>
                 </LinearLayout>

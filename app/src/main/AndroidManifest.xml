@@ -221,7 +221,8 @@
             android:exported="false" />
         <activity
             android:name=".Search_activity"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/Theme.searchtheme"/>
         <activity
             android:name=".About_activity"
             android:exported="false" />
