@@ -16,6 +16,12 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
+            android:name=".Sub2_activity"
+            android:exported="false" />
+        <activity
+            android:name=".Sub1_activity"
+            android:exported="false" />
+        <activity
             android:name=".Categories.Cat_instructive"
             android:exported="false" />
         <activity
@@ -222,7 +228,7 @@
         <activity
             android:name=".Search_activity"
             android:exported="false"
-            android:theme="@style/Theme.searchtheme"/>
+            android:theme="@style/Theme.searchtheme" />
         <activity
             android:name=".About_activity"
             android:exported="false" />

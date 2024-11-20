@@ -249,7 +249,7 @@
                         <TextView
                             android:id="@+id/tv1"
                             style="@style/TipsTextView"
-                            android:text="@string/home_test1" />
+                            android:text="@string/home_sub1" />
 
                     </androidx.cardview.widget.CardView>
 
@@ -265,7 +265,7 @@
                         <TextView
                             android:id="@+id/tv2"
                             style="@style/TipsTextView"
-                            android:text="@string/home_test2" />
+                            android:text="@string/home_sub2" />
 
                     </androidx.cardview.widget.CardView>
                 </LinearLayout>

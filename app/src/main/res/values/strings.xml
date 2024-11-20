@@ -8,8 +8,8 @@
     <string name="home_all">همه داستان ها</string>
     <string name="home_cat">دسته بندی ها</string>
     <string name="home_about">درباره ما</string>
-    <string name="home_test1">کتابخانه من ؟!</string>
-    <string name="home_test2">چرا کتاب؟</string>
+    <string name="home_sub1">کتابخانه من ؟!</string>
+    <string name="home_sub2">چرا کتاب؟</string>
 
     //menu_drawer
     <string name="menu_rate">امتیاز به برنامه</string>

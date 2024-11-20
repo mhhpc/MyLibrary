@@ -100,7 +100,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         ImageView ImageView2 = (ImageView) findViewById(R.id.miv2);
         Picasso.get().load("https://s8.uupload.ir/files/_33dde004-9358-4709-97b8-41deca4d338e(1)_2sk.jpg").into(ImageView2);
 
-        // onclick
+        // onclick -------------------------
         @SuppressLint("CutPasteId") LinearLayout txt1 = (LinearLayout) findViewById(R.id.item1);
         txt1.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
@@ -115,11 +115,24 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             }
         });
 
-        //button onclick
         @SuppressLint("CutPasteId") CardView bt1 = (CardView) findViewById(R.id.cv1);
         bt1.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, About_activity.class));
+            }
+        });
+
+        @SuppressLint("CutPasteId") CardView sub1 = (CardView) findViewById(R.id.mcv1);
+        sub1.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, Sub1_activity.class));
+            }
+        });
+
+        @SuppressLint("CutPasteId") CardView sub2 = (CardView) findViewById(R.id.mcv2);
+        sub2.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, Sub2_activity.class));
             }
         });
 

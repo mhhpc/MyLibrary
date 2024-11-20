@@ -127,6 +127,7 @@
     </style>
 
     <style name="CollapsingToolbarLayout">
+        <item name="android:forceDarkAllowed" tools:ignore="NewApi">false</item>
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">match_parent</item>
         <item name="android:background">@drawable/gradient_list_toolbar</item>
