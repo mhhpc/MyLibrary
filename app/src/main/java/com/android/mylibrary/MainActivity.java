@@ -5,6 +5,8 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.AppCompatDelegate;
 import androidx.cardview.widget.CardView;
+import androidx.core.app.ActivityOptionsCompat;
+import androidx.core.util.Pair;
 import androidx.drawerlayout.widget.DrawerLayout;
 
 import android.annotation.SuppressLint;
@@ -23,6 +25,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.android.mylibrary.Stories.Sto1_activity;
 import com.google.android.material.navigation.NavigationView;
 import com.squareup.picasso.Picasso;
 import com.transitionseverywhere.Transition;
@@ -93,6 +96,31 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             }
         }, 200);
 
+        //transitions onclick --------------------------
+        @SuppressLint("CutPasteId") CardView cv1 = (CardView) findViewById(R.id.mcv1);
+        cv1.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+
+                Pair<View, String> pair1 = Pair.create(findViewById(R.id.miv1), "trans3");
+                ActivityOptionsCompat options = ActivityOptionsCompat.makeSceneTransitionAnimation(MainActivity.this, pair1);
+
+                Intent intent = new Intent(MainActivity.this, Sub1_activity.class);
+                startActivity(intent, options.toBundle());
+            }
+        });
+
+        @SuppressLint("CutPasteId") CardView cv2 = (CardView) findViewById(R.id.mcv2);
+        cv2.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+
+                Pair<View, String> pair1 = Pair.create(findViewById(R.id.miv2), "trans4");
+                ActivityOptionsCompat options = ActivityOptionsCompat.makeSceneTransitionAnimation(MainActivity.this, pair1);
+
+                Intent intent = new Intent(MainActivity.this, Sub2_activity.class);
+                startActivity(intent, options.toBundle());
+            }
+        });
+
         //Image links
         ImageView ImageView = (ImageView) findViewById(R.id.miv1);
         Picasso.get().load("https://s8.uupload.ir/files/_ff62c125-76ab-4859-8587-8ebc154fabb4(1)_2sie.jpg").into(ImageView);
@@ -119,20 +147,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         bt1.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, About_activity.class));
-            }
-        });
-
-        @SuppressLint("CutPasteId") CardView sub1 = (CardView) findViewById(R.id.mcv1);
-        sub1.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, Sub1_activity.class));
-            }
-        });
-
-        @SuppressLint("CutPasteId") CardView sub2 = (CardView) findViewById(R.id.mcv2);
-        sub2.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, Sub2_activity.class));
             }
         });
 

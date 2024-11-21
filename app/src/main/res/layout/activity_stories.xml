@@ -53,14 +53,12 @@
 
                         <ImageView
                             android:id="@+id/miv1"
-                            style="@style/TipsImageView"
-                            android:transitionName="trans1" />
+                            style="@style/TipsImageView" />
 
                         <TextView
                             android:id="@+id/tv1"
                             style="@style/TipsTextView"
-                            android:text="@string/stories_tsto1"
-                            android:transitionName="trans2" />
+                            android:text="@string/stories_tsto1" />
 
                     </androidx.cardview.widget.CardView>
 
@@ -71,14 +69,12 @@
 
                         <ImageView
                             android:id="@+id/miv2"
-                            style="@style/TipsImageView"
-                            android:transitionName="trans1" />
+                            style="@style/TipsImageView" />
 
                         <TextView
                             android:id="@+id/tv2"
                             style="@style/TipsTextView"
-                            android:text="@string/stories_tsto2"
-                            android:transitionName="trans2" />
+                            android:text="@string/stories_tsto2" />
 
                     </androidx.cardview.widget.CardView>
                 </LinearLayout>
@@ -97,14 +93,12 @@
 
                         <ImageView
                             android:id="@+id/miv3"
-                            style="@style/TipsImageView"
-                            android:transitionName="trans1" />
+                            style="@style/TipsImageView" />
 
                         <TextView
                             android:id="@+id/tv3"
                             style="@style/TipsTextView"
-                            android:text="@string/stories_tsto3"
-                            android:transitionName="trans2" />
+                            android:text="@string/stories_tsto3" />
 
                     </androidx.cardview.widget.CardView>
 
@@ -115,14 +109,12 @@
 
                         <ImageView
                             android:id="@+id/miv4"
-                            style="@style/TipsImageView"
-                            android:transitionName="trans1" />
+                            style="@style/TipsImageView" />
 
                         <TextView
                             android:id="@+id/tv4"
                             style="@style/TipsTextView"
-                            android:text="@string/stories_tsto4"
-                            android:transitionName="trans2" />
+                            android:text="@string/stories_tsto4" />
 
                     </androidx.cardview.widget.CardView>
                 </LinearLayout>
@@ -141,14 +133,12 @@
 
                         <ImageView
                             android:id="@+id/miv5"
-                            style="@style/TipsImageView"
-                            android:transitionName="trans1" />
+                            style="@style/TipsImageView" />
 
                         <TextView
                             android:id="@+id/tv5"
                             style="@style/TipsTextView"
-                            android:text="@string/stories_tsto5"
-                            android:transitionName="trans2" />
+                            android:text="@string/stories_tsto5" />
 
                     </androidx.cardview.widget.CardView>
 
@@ -159,14 +149,12 @@
 
                         <ImageView
                             android:id="@+id/miv6"
-                            style="@style/TipsImageView"
-                            android:transitionName="trans1" />
+                            style="@style/TipsImageView" />
 
                         <TextView
                             android:id="@+id/tv6"
                             style="@style/TipsTextView"
-                            android:text="@string/stories_tsto6"
-                            android:transitionName="trans2" />
+                            android:text="@string/stories_tsto6" />
 
                     </androidx.cardview.widget.CardView>
                 </LinearLayout>
@@ -185,14 +173,12 @@
 
                         <ImageView
                             android:id="@+id/miv7"
-                            style="@style/TipsImageView"
-                            android:transitionName="trans1" />
+                            style="@style/TipsImageView"/>
 
                         <TextView
                             android:id="@+id/tv7"
                             style="@style/TipsTextView"
-                            android:text="@string/stories_tsto7"
-                            android:transitionName="trans2" />
+                            android:text="@string/stories_tsto7" />
 
                     </androidx.cardview.widget.CardView>
 
@@ -203,14 +189,12 @@
 
                         <ImageView
                             android:id="@+id/miv8"
-                            style="@style/TipsImageView"
-                            android:transitionName="trans1" />
+                            style="@style/TipsImageView"/>
 
                         <TextView
                             android:id="@+id/tv8"
                             style="@style/TipsTextView"
-                            android:text="@string/stories_tsto8"
-                            android:transitionName="trans2" />
+                            android:text="@string/stories_tsto8"/>
 
                     </androidx.cardview.widget.CardView>
                 </LinearLayout>
