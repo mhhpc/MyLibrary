@@ -152,11 +152,11 @@ public class ListViewAdapter extends BaseAdapter{
                     mContext.startActivity(intent);
                 }
                 if (modellist.get(postition).getTitle().equals("کتابخانه من ؟!")){
-                    Intent intent = new Intent(mContext, MainActivity.class);
+                    Intent intent = new Intent(mContext, Sub1_activity.class);
                     mContext.startActivity(intent);
                 }
                 if (modellist.get(postition).getTitle().equals("چرا کتاب ؟")){
-                    Intent intent = new Intent(mContext, MainActivity.class);
+                    Intent intent = new Intent(mContext, Sub2_activity.class);
                     mContext.startActivity(intent);
                 }
                 if (modellist.get(postition).getTitle().equals("درباره ما")){

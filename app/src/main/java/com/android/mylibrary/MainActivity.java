@@ -150,6 +150,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             }
         });
 
+        //Image links
+        ImageView imageView0 = (ImageView) findViewById(R.id.iv1);
+        Picasso.get().load("https://s8.uupload.ir/files/my(3)_pkng.jpg").placeholder(R.drawable.logo2).into(imageView0);
+
         //-------------
         init();
         onclick();

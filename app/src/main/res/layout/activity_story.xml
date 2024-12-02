@@ -20,7 +20,7 @@
             <RelativeLayout
                 android:id="@+id/view"
                 style="@style/RelativeView"
-                android:visibility="invisible">
+                android:visibility="visible">
 
                 <io.github.florent37.shapeofview.shapes.ArcView
                     android:id="@+id/v1"
@@ -38,6 +38,8 @@
             <ImageView
                 android:id="@+id/imv1"
                 style="@style/MainImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
                 android:layout_below="@id/view"
                 android:layout_centerHorizontal="true"
                 android:layout_marginHorizontal="7dp"
