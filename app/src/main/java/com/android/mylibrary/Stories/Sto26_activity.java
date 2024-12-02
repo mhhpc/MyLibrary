@@ -13,6 +13,7 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
 
+import com.android.mylibrary.BaseStoryActivity;
 import com.android.mylibrary.ImageLoaderUtil;
 import com.android.mylibrary.R;
 import com.android.mylibrary.TextSize;
@@ -22,38 +23,19 @@ import com.transitionseverywhere.Slide;
 import com.transitionseverywhere.Transition;
 import com.transitionseverywhere.TransitionManager;
 
+import java.util.Arrays;
+import java.util.List;
 import java.util.Random;
 
-public class Sto26_activity extends AppCompatActivity {
-
-    private TextSize settingsManager;
+public class Sto26_activity extends BaseStoryActivity {
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_story);
+    protected List<Integer> getTextIds() {
+        return Arrays.asList(R.string.stories_tsto26, R.string.sto26_t1);
+    }
 
-        //Set text
-        ((TextView) findViewById(R.id.tv1)).setText(getString(R.string.stories_tsto26));
-        ((TextView) findViewById(R.id.t1)).setText(getString(R.string.sto26_t1));
-
-        //Change text size
-        settingsManager = new TextSize(this);
-        TextView Textview1 = findViewById(R.id.tv1);
-        TextView Textview2 = findViewById(R.id.t1);
-        TextView Textview3 = findViewById(R.id.t2);
-        TextView Textview4 = findViewById(R.id.t3);
-        TextView Textview5 = findViewById(R.id.t4);
-        TextView Textview6 = findViewById(R.id.t5);
-
-        float textSize = settingsManager.getTextSize();
-        Textview1.setTextSize(textSize);
-        Textview2.setTextSize(textSize);
-        Textview3.setTextSize(textSize);
-        Textview4.setTextSize(textSize);
-        Textview5.setTextSize(textSize);
-        Textview6.setTextSize(textSize);
-
+    @Override
+    protected void configureAnimation() {
 
         //Animation ------------
         final ViewGroup r = findViewById(R.id.story);
@@ -68,12 +50,10 @@ public class Sto26_activity extends AppCompatActivity {
         final ImageView t8 = findViewById(R.id.im4);
         final TextView t9 = findViewById(R.id.t5);
 
-
-
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Transition transition = new Slide();
+                Transition transition = new Fade();
                 transition.setDuration(600);
                 TransitionManager.beginDelayedTransition(r, transition);
                 t0.setVisibility(View.VISIBLE);
@@ -90,19 +70,10 @@ public class Sto26_activity extends AppCompatActivity {
             }
         }, 200);
 
-        //Gradient
-        ConstraintLayout constraintLayout = findViewById(R.id.story);
-        AnimationDrawable animationDrawable = (AnimationDrawable) constraintLayout.getBackground();
-        animationDrawable.setEnterFadeDuration(2000);
-        animationDrawable.setExitFadeDuration(4000);
-        animationDrawable.start();
+    }
 
-        //Random show top image
-        ImageView imageView = findViewById(R.id.iv1);
-        ImageLoaderUtil.loadRandomImage(imageView);
-
-        ImageView imageView1 = (ImageView) findViewById(R.id.imv1);
-        Picasso.get().load("https://s8.uupload.ir/files/amazing_r031.jpg").noFade().error(R.drawable.error).into(imageView1);
-
+    @Override
+    protected List<String> getImageUrls() {
+        return Arrays.asList("https://s8.uupload.ir/files/amazing_r031.jpg");
     }
 }
