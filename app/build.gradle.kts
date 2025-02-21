@@ -12,10 +12,8 @@ android {
         applicationId = "com.example.short_stories"
         minSdk = 23
         targetSdk = 34
-        versionCode = 20
-        versionName = "6.0"
-
-        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        versionCode = 22
+        versionName = "6.1.1"
     }
 
     buildTypes {
@@ -62,5 +60,9 @@ dependencies {
     implementation("com.squareup.picasso:picasso:2.71828")
     //custom toast
     implementation("io.github.muddz:styleabletoast:2.4.0")
+
+    //adivery
+    implementation("com.adivery:sdk:4.8.3")
+    implementation("org.jetbrains.kotlin:kotlin-stdlib:1.5.10")
 
 }

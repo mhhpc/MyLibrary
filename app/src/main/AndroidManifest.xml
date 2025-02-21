@@ -15,6 +15,9 @@
         android:theme="@style/Theme.MyLibrary"
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
+        <uses-library
+            android:name="android.test.runner"
+            android:required="false" />
         <activity
             android:name=".Sub2_activity"
             android:exported="false" />

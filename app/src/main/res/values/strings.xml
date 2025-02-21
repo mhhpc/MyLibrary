@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">My Library</string>
     <string name="app_name_persian">کتابخانه من</string>
-    <string name="app_version">نسخه 6.0</string>
+    <string name="app_version">نسخه 6.1.1</string>
 
     //activity_main
     <string name="home_t1">یه شروع لذت بخش ...</string>
@@ -34,7 +34,7 @@
     <string name="about_t2">(: درباره ما :)</string>
     <string name="about_tx1">ساخته شده توسط محمد حسین حمیدی</string>
     <string name="about_tx2">Copyright © 1398-1403 MHH Releases</string>
-    <string name="about_tx3">6 آذر 1403</string>
+    <string name="about_tx3">3 اسفند 1403</string>
     <string name="about_tx4">منبع: 1. namnak.com</string>
 
     //activity_sub1

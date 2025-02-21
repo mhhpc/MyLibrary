@@ -25,12 +25,15 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.adivery.sdk.Adivery;
 import com.android.mylibrary.Stories.Sto1_activity;
 import com.google.android.material.navigation.NavigationView;
 import com.squareup.picasso.Picasso;
 import com.transitionseverywhere.Transition;
 import com.transitionseverywhere.TransitionManager;
 import com.transitionseverywhere.extra.Scale;
+
+import java.util.concurrent.TimeUnit;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -43,6 +46,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        //adivery
+        Adivery.configure(getApplication(), "c6374f27-4788-4704-92b3-7fc1c882f4e2");
+        Adivery.prepareAppOpenAd(MainActivity.this, "b7cdd8e0-2af3-49ed-b612-74d129ece9f0");
+        //appopen %5
+        checkAndIncreaseRunCount();
+
+
         //apply selected theme ----------
         applyTheme();
         setContentView(R.layout.activity_main);
@@ -179,13 +190,45 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         editor.apply();
     }
 
-    //apply selected theme ----------
     @Override
     protected void onResume() {
         super.onResume();
+
+        SharedPreferences prefs = getSharedPreferences("prefs", MODE_PRIVATE);
+        long lastPauseTime = prefs.getLong("lastPauseTime", 0);
+        long pauseTime = System.currentTimeMillis() - lastPauseTime;
+
+        if (lastPauseTime != 0 && pauseTime > TimeUnit.SECONDS.toMillis(5)) {
+            Adivery.showAppOpenAd(MainActivity.this, "b7cdd8e0-2af3-49ed-b612-74d129ece9f0");
+        }
+
         applyTheme();
     }
-    //apply selected theme ----------
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+
+        SharedPreferences prefs = getSharedPreferences("prefs", MODE_PRIVATE);
+        SharedPreferences.Editor editor = prefs.edit();
+        editor.putLong("lastPauseTime", System.currentTimeMillis());
+        editor.apply();
+    }
+
+    private void checkAndIncreaseRunCount() {
+        SharedPreferences prefs = getSharedPreferences("AppPrefs", MODE_PRIVATE);
+        int appRunCount = prefs.getInt("appRunCount", 0);
+
+        if (appRunCount > 0 && appRunCount % 5 == 0) {
+            if (Adivery.isLoaded("b7cdd8e0-2af3-49ed-b612-74d129ece9f0")){
+                Adivery.showAppOpenAd(MainActivity.this, "b7cdd8e0-2af3-49ed-b612-74d129ece9f0");
+            }
+        }
+        prefs.edit().putInt("appRunCount", appRunCount + 1).apply();
+    }
+
+
+
     private void applyTheme() {
         // بازیابی تم انتخاب شده از SharedPreferences
         SharedPreferences preferences = getSharedPreferences("MyPrefs", MODE_PRIVATE);

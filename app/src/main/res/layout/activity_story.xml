@@ -56,22 +56,42 @@
                 android:text="Sample Title"
                 android:transitionName="trans2" />
 
+            <com.adivery.sdk.AdiveryNativeAdView
+                android:id="@+id/native_ad_view"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/tv1"
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:placement_id="019934ef-1c56-41d4-9d96-329ee3fefd47"
+                app:adivery_native_ad_layout="@layout/ad_layout_example" />
+
             <TextView
                 android:id="@+id/t1"
                 style="@style/SimpleTextview"
-                android:layout_below="@+id/tv1"
+                android:layout_below="@+id/native_ad_view"
                 android:layout_marginHorizontal="10dp"
                 android:layout_marginTop="15dp"
                 android:layout_marginBottom="10dp"
                 android:text="Sample Text" />
 
+            <com.adivery.sdk.AdiveryBannerAdView
+                android:id="@+id/banner_ad"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/t1"
+                android:layout_marginTop="15dp"
+                app:banner_size="banner"
+                app:placement_id="c7712952-11f9-4807-9372-6682f6c781d6" />
+
             <ImageView
                 android:id="@+id/im1"
                 style="@style/MainImageView"
-                android:layout_below="@id/t1"
+                android:layout_below="@id/banner_ad"
                 android:layout_centerHorizontal="true"
                 android:layout_marginHorizontal="7dp"
-                android:layout_marginTop="5dp"
                 android:layout_marginBottom="10dp" />
 
             <TextView
