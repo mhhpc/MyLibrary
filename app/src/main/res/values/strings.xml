@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">My Library</string>
     <string name="app_name_persian">کتابخانه من</string>
-    <string name="app_version">نسخه 6.1.1</string>
+    <string name="app_version">نسخه 6.1.2</string>
 
     //activity_main
     <string name="home_t1">یه شروع لذت بخش ...</string>

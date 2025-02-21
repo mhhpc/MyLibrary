@@ -12,8 +12,10 @@ android {
         applicationId = "com.example.short_stories"
         minSdk = 23
         targetSdk = 34
-        versionCode = 22
-        versionName = "6.1.1"
+        versionCode = 23
+        versionName = "6.1.2"
+
+        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
     buildTypes {
